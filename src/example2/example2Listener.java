@@ -7,6 +7,8 @@ import javax.sip.address.*;
 import java.net.*;
 import java.util.*;
 
+import org.apache.log4j.*;
+
 public class example2Listener implements SipListener{
 
 private SipFactory mySipFactory;
@@ -29,7 +31,7 @@ Example2GUI myGUI;
     myGUI.jLabel5.setText("Initialized at IP "+ myIP+", port "+myPort);
 
 
-    mySipFactory=SipFactory.getInstance();
+    mySipFactory=SipFactory.getInstance();  //only one instance can be used?
     mySipFactory.setPathName("gov.nist");
 
     myMessageFactory=mySipFactory.createMessageFactory();
@@ -37,7 +39,11 @@ Example2GUI myGUI;
     myAddressFactory=mySipFactory.createAddressFactory();
 
     myProperties=new Properties();
-    myProperties.setProperty("javax.sip.STACK_NAME", "myStack");
+    myProperties.setProperty("javax.sip.STACK_NAME", "SIPLayer");//"myStack");
+    //myProperties.setProperty("javax.sip.IP_ADDRESS", myIP);
+    
+ 
+    
     mySipStack=mySipFactory.createSipStack(myProperties);
 
     myListeningPoint=mySipStack.createListeningPoint(myIP, myPort, "udp");

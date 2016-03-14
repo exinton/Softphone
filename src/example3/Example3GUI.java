@@ -131,6 +131,7 @@ public void display(String text) {
       String t = jTextField4.getText();
       list = new example3Listener(Integer.parseInt(t), this);
     }catch (Exception exc){
+    	exc.printStackTrace();
 
     }
   }

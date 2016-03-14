@@ -52,15 +52,19 @@ public void display(String text) {
     contentPane.setAlignmentY((float) 0.5);
     contentPane.setDebugGraphicsOptions(0);
     contentPane.setDoubleBuffered(true);
-    contentPane.setMaximumSize(new Dimension(380, 244));
-    contentPane.setMinimumSize(new Dimension(380, 244));
+    contentPane.setMaximumSize(new Dimension(500, 244));
+    contentPane.setMinimumSize(new Dimension(500, 244));
+    //contentPane.setMinimumSize(new Dimension(380, 244));
+    //contentPane.setMaximumSize(new Dimension(380, 244));
+    //contentPane.setMinimumSize(new Dimension(380, 244));
     contentPane.setOpaque(true);
-    contentPane.setPreferredSize(new Dimension(380, 244));
+    //contentPane.setPreferredSize(new Dimension(380, 244));
+    contentPane.setPreferredSize(new Dimension(500, 244));
     contentPane.setRequestFocusEnabled(true);
     jLabel1.setText("AOR:");
-    jLabel1.setBounds(new Rectangle(12, 111, 29, 15));
+    jLabel1.setBounds(new Rectangle(12, 111, 50, 15));
     jLabel3.setText("registrar:");
-    jLabel3.setBounds(new Rectangle(10, 149, 48, 15));
+    jLabel3.setBounds(new Rectangle(10, 149, 70, 15));
     jTextField1.setMaximumSize(new Dimension(112, 20));
     jTextField1.setPreferredSize(new Dimension(112, 20));
     jTextField1.setSelectionEnd(18);
@@ -71,7 +75,7 @@ public void display(String text) {
     jTextField3.setText("sip:127.0.0.1:5062");
     jTextField3.setBounds(new Rectangle(65, 145, 131, 20));
     jLabel4.setText("own port:");
-    jLabel4.setBounds(new Rectangle(71, 31, 49, 19));
+    jLabel4.setBounds(new Rectangle(71, 31, 75, 19));
     jTextField4.setToolTipText("");
     jTextField4.setText("5060");
     jTextField4.setBounds(new Rectangle(142, 31, 43, 23));
@@ -133,6 +137,8 @@ public void display(String text) {
       String t = jTextField4.getText();
       list = new example2Listener(Integer.parseInt(t), this);
     }catch (Exception exc){
+    	
+    	System.out.println(exc.getMessage());
 
     }
   }
