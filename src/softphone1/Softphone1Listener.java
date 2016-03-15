@@ -92,9 +92,11 @@ class MyTimerTask extends TimerTask {
 
       myAlertTool=new TonesTool();
       myRingTool=new TonesTool();
-
-      myAlertTool.prepareTone("file://c:\\alert.wav");
-      myRingTool.prepareTone("file://c:\\ring.wav");
+      URL location = Softphone1Listener.class.getProtectionDomain().getCodeSource().getLocation();
+      System.out.println(location.getFile());
+      
+      myAlertTool.prepareTone(location.getFile()+"ring/alert.wav");
+      myRingTool.prepareTone(location.getFile()+"ring/ring.wav");
 
 
       mySipFactory = SipFactory.getInstance();
