@@ -98,8 +98,8 @@ class MyTimerTask extends TimerTask {
       myAlertTool=new TonesTool();
       myRingTool=new TonesTool();
 
-      myAlertTool.prepareTone("file://c:\\alert.wav");
-      myRingTool.prepareTone("file://c:\\ring.wav");
+      //myAlertTool.prepareTone("file://c:\\alert.wav");
+      //myRingTool.prepareTone("file://c:\\ring.wav");
 
 
       mySipFactory = SipFactory.getInstance();
