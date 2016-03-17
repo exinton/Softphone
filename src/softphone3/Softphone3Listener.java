@@ -11,7 +11,7 @@ import java.lang.*;
 
 import softphone1.Softphone1Listener;
 import splibraries.*;
-
+import splibraries.CommonFuncs;
 
 public class Softphone3Listener implements SipListener{
 
@@ -86,7 +86,7 @@ class MyTimerTask extends TimerTask {
     try{
       myServer=sipserver;
       myGUI = GUI;
-      myIP = InetAddress.getLocalHost().getHostAddress();
+      myIP = CommonFuncs.getLocalIP();//InetAddress.getLocalHost().getHostAddress();
       myPort = conf.sipPort;
       myAudioPort=conf.audioPort;
       myVideoPort=conf.videoPort;
