@@ -6,6 +6,7 @@ import javax.sip.header.*;
 import javax.sip.address.*;
 import java.net.*;
 import java.util.*;
+import splibraries.CommonFuncs;
 
 public class SipproxyListener implements SipListener{
 
@@ -36,7 +37,7 @@ private ArrayList transactionContext;
       myDomain=domain;
       recordRoute=recroute;
       myGUI = GUI;
-      myIP = InetAddress.getLocalHost().getHostAddress();
+      myIP = CommonFuncs.getLocalIP();//InetAddress.getLocalHost().getHostAddress();
       myPort = port;
       myGUI.jLabel5.setText("Initialized at IP "+ myIP+", port "+myPort);
 
