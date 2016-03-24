@@ -1,0 +1,42 @@
+#
+# JMF Version 2.1.1e
+#
+
+## Platform: Linux, amd64, 4.2.0-34-generic
+## Java VM: Oracle Corporation, 1.7.0_95
+
+## DataSource created: com.sun.media.protocol.javasound.DataSource@48a85972
+
+$$ Profile: instantiation: 2 ms
+
+## Processor created: com.sun.media.processor.unknown.Handler@71482d87
+##   using DataSource: com.sun.media.protocol.javasound.DataSource@48a85972
+
+$$ Profile: parsing: 4 ms
+
+## Building flow graph for: javasound://44100
+
+## Building Track: 0
+## Input: LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+## An output content type is specified: RAW/RTP
+## Failed to open plugin com.sun.media.codec.audio.mpa.NativeEncoder@6a5dd151. Will re-build the graph allover again
+
+
+## Here's the completed flow graph:
+  com.sun.media.parser.RawBufferParser@4d20f4c8
+     connects to: com.ibm.media.codec.audio.rc.RCModule@2ea69e07
+     format: LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+  com.ibm.media.codec.audio.rc.RCModule@2ea69e07
+     connects to: com.ibm.media.codec.audio.dvi.JavaEncoder@3cd0f57e
+     format: LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+  com.ibm.media.codec.audio.dvi.JavaEncoder@3cd0f57e
+     connects to: com.sun.media.multiplexer.RTPSyncBufferMux@3aa54263
+     format: dvi/rtp, 8000.0 Hz, 4-bit, Mono
+
+
+$$ Profile: graph building: 96 ms
+
+$$ Profile: realize, post graph building: 42 ms
+
+## Computed latency for video: 60 ms
+
