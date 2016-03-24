@@ -27,7 +27,11 @@ public void startMedia(String peerIP,int peerPort,int recvPort, int fmt) {
 
   try{
     //We obtain the DataSource correponding to the microphone capture
+<<<<<<< HEAD
     AudioFormat df=new AudioFormat(AudioFormat.LINEAR,8000,16,1);
+=======
+    AudioFormat df=new AudioFormat(AudioFormat.LINEAR,8000,8,1);
+>>>>>>> 231d03309614ae5f1c20fc42e1aff67e04ef4b72
     Vector devices=CaptureDeviceManager.getDeviceList(df);
     CaptureDeviceInfo di=(CaptureDeviceInfo) devices.elementAt(0);
     DataSource daso=Manager.createDataSource(di.getLocator());
@@ -41,6 +45,7 @@ public void startMedia(String peerIP,int peerPort,int recvPort, int fmt) {
    myProcessor.setContentDescriptor(new ContentDescriptor(ContentDescriptor.RAW_RTP));
    TrackControl track[] = myProcessor.getTrackControls();
    switch (fmt) {
+<<<<<<< HEAD
      case 3: af=new AudioFormat(AudioFormat.GSM,8000,4,1);
      		break;
      case 4: af=new AudioFormat(AudioFormat.G723_RTP,8000,4,1);
@@ -51,6 +56,12 @@ public void startMedia(String peerIP,int peerPort,int recvPort, int fmt) {
    }
    track[0].setFormat(af);
    
+=======
+     case 3: af=new AudioFormat(AudioFormat.GSM_RTP,8000,4,1);
+     case 4: af=new AudioFormat(AudioFormat.G723_RTP,8000,4,1);
+   }
+   track[0].setFormat(af);
+>>>>>>> 231d03309614ae5f1c20fc42e1aff67e04ef4b72
    myProcessor.realize();
    while (myProcessor.getState() != Processor.Realized) {}
    DataSource ds = myProcessor.getDataOutput();
@@ -72,7 +83,11 @@ public void startMedia(String peerIP,int peerPort,int recvPort, int fmt) {
         new SessionAddress (InetAddress.getLocalHost(),recvPort,InetAddress.getLocalHost(),recvPort + 1);
     SessionAddress remoteAddr = new SessionAddress(destAddr, peerPort, destAddr, peerPort + 1);
     myVoiceSessionManager.startSession(localAddr , localAddr , remoteAddr,null);
+<<<<<<< HEAD
 htop
+=======
+
+>>>>>>> 231d03309614ae5f1c20fc42e1aff67e04ef4b72
 
    // We obtain a SendStream from the Datasource obtained as output to the processor
    ss = myVoiceSessionManager.createSendStream(ds, 0);
