@@ -1,0 +1,4866 @@
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459396637121"
+isSender="true" 
+transactionId="z9hg4bk-343637-05aa9c7ee867fc0cf5f5359e7432bad5" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343637-05aa9c7ee867fc0cf5f5359e7432bad5
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459396637491"
+isSender="false" 
+transactionId="z9hg4bk-343637-05aa9c7ee867fc0cf5f5359e7432bad5" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343637-05aa9c7ee867fc0cf5f5359e7432bad5;rport=60734
+CSeq: 1 INVITE
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459396637499"
+isSender="false" 
+transactionId="z9hg4bk-343637-05aa9c7ee867fc0cf5f5359e7432bad5" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343637-05aa9c7ee867fc0cf5f5359e7432bad5;rport=60734
+CSeq: 1 INVITE
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459396637502"
+isSender="true" 
+transactionId="z9hg4bk-343637-265ad9bce3c3adc4b846c7445a46702a" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343637-265ad9bce3c3adc4b846c7445a46702a
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459396637604"
+isSender="true" 
+transactionId="z9hg4bk-343637-a78d510949d1bda7be41179bc1753f02" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343637-a78d510949d1bda7be41179bc1753f02
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459396637610"
+isSender="false" 
+transactionId="z9hg4bk-343637-a78d510949d1bda7be41179bc1753f02" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343637-a78d510949d1bda7be41179bc1753f02;rport=60734
+CSeq: 2 INVITE
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459396637648"
+isSender="false" 
+transactionId="z9hg4bk-343637-a78d510949d1bda7be41179bc1753f02" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343637-a78d510949d1bda7be41179bc1753f02;rport=60734
+CSeq: 2 INVITE
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459396637651"
+isSender="true" 
+transactionId="z9hg4bk-343637-a15f1dfc85bb7ba78e3c440ab10d143e" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343637-a15f1dfc85bb7ba78e3c440ab10d143e
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:41761" 
+to="127.0.0.1:5061" 
+time="1459396637759"
+isSender="false" 
+transactionId="z9hg4bk-333035-1dbc905e407ea1c894d30d5b2a771e2c" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-333035-1dbc905e407ea1c894d30d5b2a771e2c;rport=41761
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:41761" 
+time="1459396637768"
+isSender="true" 
+transactionId="z9hg4bk-333035-1dbc905e407ea1c894d30d5b2a771e2c" 
+callId="9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-333035-1dbc905e407ea1c894d30d5b2a771e2c;rport=41761
+CSeq: 1 BYE
+Call-ID: 9af65030b0e325e18ca05ec6bd5c754f@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459397974265"
+isSender="true" 
+transactionId="z9hg4bk-333738-683efac6630313a57f73c0145b591c75" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-683efac6630313a57f73c0145b591c75
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459397974764"
+isSender="false" 
+transactionId="z9hg4bk-333738-683efac6630313a57f73c0145b591c75" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-683efac6630313a57f73c0145b591c75;rport=54493
+CSeq: 1 INVITE
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459397974773"
+isSender="false" 
+transactionId="z9hg4bk-333738-683efac6630313a57f73c0145b591c75" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-683efac6630313a57f73c0145b591c75;rport=54493
+CSeq: 1 INVITE
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459397974776"
+isSender="true" 
+transactionId="z9hg4bk-333738-0bb3880d2fb1d8864e740833f06cabac" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-0bb3880d2fb1d8864e740833f06cabac
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459397974878"
+isSender="true" 
+transactionId="z9hg4bk-333738-08bc727fd2faa8ca12a09d84b884cc96" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-08bc727fd2faa8ca12a09d84b884cc96
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459397974884"
+isSender="false" 
+transactionId="z9hg4bk-333738-08bc727fd2faa8ca12a09d84b884cc96" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-08bc727fd2faa8ca12a09d84b884cc96;rport=54493
+CSeq: 2 INVITE
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459397974924"
+isSender="false" 
+transactionId="z9hg4bk-333738-08bc727fd2faa8ca12a09d84b884cc96" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-08bc727fd2faa8ca12a09d84b884cc96;rport=54493
+CSeq: 2 INVITE
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459397974926"
+isSender="true" 
+transactionId="z9hg4bk-333738-6719e43124748ac2d4f93a5a5b38a134" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-6719e43124748ac2d4f93a5a5b38a134
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:43824" 
+to="127.0.0.1:5061" 
+time="1459397975039"
+isSender="false" 
+transactionId="z9hg4bk-323839-620a4e2a157b3e1770b6db2f417a1b54" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-323839-620a4e2a157b3e1770b6db2f417a1b54;rport=43824
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:43824" 
+time="1459397975047"
+isSender="true" 
+transactionId="z9hg4bk-323839-620a4e2a157b3e1770b6db2f417a1b54" 
+callId="d6602b705eae7f172704d865b732008d@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-323839-620a4e2a157b3e1770b6db2f417a1b54;rport=43824
+CSeq: 1 BYE
+Call-ID: d6602b705eae7f172704d865b732008d@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459401513667"
+isSender="true" 
+transactionId="z9hg4bk-313231-eba09a317d2a1db25f08c8cea0e9fc89" 
+callId="cd1dc796e3ceda672be6c6620a1c7771@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: cd1dc796e3ceda672be6c6620a1c7771@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-313231-eba09a317d2a1db25f08c8cea0e9fc89
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459401731984"
+isSender="true" 
+transactionId="z9hg4bk-373038-51a77e415efca406943048c0a9ea62e8" 
+callId="5e877c5dae29675448ea5a0d759468e9@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 5e877c5dae29675448ea5a0d759468e9@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373038-51a77e415efca406943048c0a9ea62e8
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459402094098"
+isSender="true" 
+transactionId="z9hg4bk-343831-7c11e5f979c728a1777cae86c2636741" 
+callId="231b89a5713c052bad044b893273bb28@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 231b89a5713c052bad044b893273bb28@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343831-7c11e5f979c728a1777cae86c2636741
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459402351043"
+isSender="true" 
+transactionId="z9hg4bk-373831-b913578d4731224cfa9531ccc6280d7b" 
+callId="6fdf25a02e4ac188ea10cd61a7740133@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 6fdf25a02e4ac188ea10cd61a7740133@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373831-b913578d4731224cfa9531ccc6280d7b
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459402520520"
+isSender="true" 
+transactionId="z9hg4bk-363633-bf7f8359e5b678ec7debfc399e657e33" 
+callId="8a78861c8b5bd5391eb689ef874068a8@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 8a78861c8b5bd5391eb689ef874068a8@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363633-bf7f8359e5b678ec7debfc399e657e33
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459403895708"
+isSender="true" 
+transactionId="z9hg4bk-393938-f4980e4aa6bbc04cdd96e3acf4b67e00" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393938-f4980e4aa6bbc04cdd96e3acf4b67e00
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459403896227"
+isSender="false" 
+transactionId="z9hg4bk-393938-f4980e4aa6bbc04cdd96e3acf4b67e00" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393938-f4980e4aa6bbc04cdd96e3acf4b67e00;rport=56747
+CSeq: 1 INVITE
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459403896236"
+isSender="false" 
+transactionId="z9hg4bk-393938-f4980e4aa6bbc04cdd96e3acf4b67e00" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393938-f4980e4aa6bbc04cdd96e3acf4b67e00;rport=56747
+CSeq: 1 INVITE
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459403896240"
+isSender="true" 
+transactionId="z9hg4bk-393938-fa0ab04c5160c7461ad2c3ba2cb67cc3" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393938-fa0ab04c5160c7461ad2c3ba2cb67cc3
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459403896343"
+isSender="true" 
+transactionId="z9hg4bk-393938-b809b3a3b17b090840cb4e000216fdad" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393938-b809b3a3b17b090840cb4e000216fdad
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459403896349"
+isSender="false" 
+transactionId="z9hg4bk-393938-b809b3a3b17b090840cb4e000216fdad" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393938-b809b3a3b17b090840cb4e000216fdad;rport=56747
+CSeq: 2 INVITE
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459403896388"
+isSender="false" 
+transactionId="z9hg4bk-393938-b809b3a3b17b090840cb4e000216fdad" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393938-b809b3a3b17b090840cb4e000216fdad;rport=56747
+CSeq: 2 INVITE
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459403896391"
+isSender="true" 
+transactionId="z9hg4bk-393938-c927e15f6e607191b047167eb980c9f7" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393938-c927e15f6e607191b047167eb980c9f7
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:37746" 
+to="127.0.0.1:5061" 
+time="1459403896503"
+isSender="false" 
+transactionId="z9hg4bk-393137-34db2285a916bf712746a3d4623d8fe8" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-393137-34db2285a916bf712746a3d4623d8fe8;rport=37746
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:37746" 
+time="1459403896511"
+isSender="true" 
+transactionId="z9hg4bk-393137-34db2285a916bf712746a3d4623d8fe8" 
+callId="fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-393137-34db2285a916bf712746a3d4623d8fe8;rport=37746
+CSeq: 1 BYE
+Call-ID: fcd46b597834dba4b937b0d0e47e7a51@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459404030117"
+isSender="true" 
+transactionId="z9hg4bk-323738-139650caa2a421113371ee6e4b49d91e" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-323738-139650caa2a421113371ee6e4b49d91e
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459404030524"
+isSender="false" 
+transactionId="z9hg4bk-323738-139650caa2a421113371ee6e4b49d91e" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-323738-139650caa2a421113371ee6e4b49d91e;rport=39299
+CSeq: 1 INVITE
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459404030532"
+isSender="false" 
+transactionId="z9hg4bk-323738-139650caa2a421113371ee6e4b49d91e" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-323738-139650caa2a421113371ee6e4b49d91e;rport=39299
+CSeq: 1 INVITE
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459404030536"
+isSender="true" 
+transactionId="z9hg4bk-323738-36b0cec61a5504c821389e4652594bd2" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-323738-36b0cec61a5504c821389e4652594bd2
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459404030638"
+isSender="true" 
+transactionId="z9hg4bk-323738-50e5260cda54ee8b33cb9297e875488e" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-323738-50e5260cda54ee8b33cb9297e875488e
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459404030644"
+isSender="false" 
+transactionId="z9hg4bk-323738-50e5260cda54ee8b33cb9297e875488e" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-323738-50e5260cda54ee8b33cb9297e875488e;rport=39299
+CSeq: 2 INVITE
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459404030681"
+isSender="false" 
+transactionId="z9hg4bk-323738-50e5260cda54ee8b33cb9297e875488e" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-323738-50e5260cda54ee8b33cb9297e875488e;rport=39299
+CSeq: 2 INVITE
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459404030683"
+isSender="true" 
+transactionId="z9hg4bk-323738-63fa57945c733f62dbce50820eb74ce0" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-323738-63fa57945c733f62dbce50820eb74ce0
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:33325" 
+to="127.0.0.1:5061" 
+time="1459404030782"
+isSender="false" 
+transactionId="z9hg4bk-393137-9ea26c1572773d7f10de16babe6c0c51" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-393137-9ea26c1572773d7f10de16babe6c0c51;rport=33325
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:33325" 
+time="1459404030791"
+isSender="true" 
+transactionId="z9hg4bk-393137-9ea26c1572773d7f10de16babe6c0c51" 
+callId="9c46a73726e7eef80fa83995d7b92e93@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-393137-9ea26c1572773d7f10de16babe6c0c51;rport=33325
+CSeq: 1 BYE
+Call-ID: 9c46a73726e7eef80fa83995d7b92e93@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459405345095"
+isSender="true" 
+transactionId="z9hg4bk-373934-52351daf60ece34285b87fbfd08af7b9" 
+callId="62bcb736ee1c01c25141d6e1792c676c@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 62bcb736ee1c01c25141d6e1792c676c@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373934-52351daf60ece34285b87fbfd08af7b9
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459405480099"
+isSender="true" 
+transactionId="z9hg4bk-383631-d98044ff23aaac614d947e229ad829ef" 
+callId="8ff0347ba4148f56fd5c73f455a72c47@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 8ff0347ba4148f56fd5c73f455a72c47@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383631-d98044ff23aaac614d947e229ad829ef
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459405523563"
+isSender="true" 
+transactionId="z9hg4bk-373432-8f72a03606db28c21a27f7fb890bbf5f" 
+callId="172a93fb72d94f6f09472cbb17187bde@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 172a93fb72d94f6f09472cbb17187bde@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373432-8f72a03606db28c21a27f7fb890bbf5f
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459405568216"
+isSender="true" 
+transactionId="z9hg4bk-3130-ef5e9f0ff6b96d027adf2b82ec55a50d" 
+callId="32557d63e0f80d5d4ae4eb2ff3ff1a48@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 32557d63e0f80d5d4ae4eb2ff3ff1a48@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-3130-ef5e9f0ff6b96d027adf2b82ec55a50d
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459405726692"
+isSender="true" 
+transactionId="z9hg4bk-393831-db98ff28333bd7e731829ee653f011cf" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393831-db98ff28333bd7e731829ee653f011cf
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459405727249"
+isSender="false" 
+transactionId="z9hg4bk-393831-db98ff28333bd7e731829ee653f011cf" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393831-db98ff28333bd7e731829ee653f011cf;rport=44169
+CSeq: 1 INVITE
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459405727257"
+isSender="false" 
+transactionId="z9hg4bk-393831-db98ff28333bd7e731829ee653f011cf" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393831-db98ff28333bd7e731829ee653f011cf;rport=44169
+CSeq: 1 INVITE
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459405727260"
+isSender="true" 
+transactionId="z9hg4bk-393831-42829c07ee8c63db2246339ac8336952" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393831-42829c07ee8c63db2246339ac8336952
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459405727362"
+isSender="true" 
+transactionId="z9hg4bk-393831-5918d5b172d80205615977a0ae8fd609" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393831-5918d5b172d80205615977a0ae8fd609
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459405727368"
+isSender="false" 
+transactionId="z9hg4bk-393831-5918d5b172d80205615977a0ae8fd609" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393831-5918d5b172d80205615977a0ae8fd609;rport=44169
+CSeq: 2 INVITE
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459405727404"
+isSender="false" 
+transactionId="z9hg4bk-393831-5918d5b172d80205615977a0ae8fd609" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393831-5918d5b172d80205615977a0ae8fd609;rport=44169
+CSeq: 2 INVITE
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459405727407"
+isSender="true" 
+transactionId="z9hg4bk-393831-4b7e2077e29c35f80fe94eeb2731df04" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393831-4b7e2077e29c35f80fe94eeb2731df04
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:39884" 
+to="127.0.0.1:5061" 
+time="1459405727515"
+isSender="false" 
+transactionId="z9hg4bk-3934-e9374f3ba4f67bc12ed16edbd7ec7505" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-3934-e9374f3ba4f67bc12ed16edbd7ec7505;rport=39884
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:39884" 
+time="1459405727523"
+isSender="true" 
+transactionId="z9hg4bk-3934-e9374f3ba4f67bc12ed16edbd7ec7505" 
+callId="a1d9172e20d5787a2240b170486e388b@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-3934-e9374f3ba4f67bc12ed16edbd7ec7505;rport=39884
+CSeq: 1 BYE
+Call-ID: a1d9172e20d5787a2240b170486e388b@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406035043"
+isSender="true" 
+transactionId="z9hg4bk-353032-ef3f26ed42117f2327f1a7c13757e2a3" 
+callId="c0a072791b563f70b5ea4d5788d3b7a7@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: c0a072791b563f70b5ea4d5788d3b7a7@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353032-ef3f26ed42117f2327f1a7c13757e2a3
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406234163"
+isSender="true" 
+transactionId="z9hg4bk-36-ea66b42092691d8d360e614af679730c" 
+callId="34d6aba15a6ccb2199aaffdd55a82488@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 34d6aba15a6ccb2199aaffdd55a82488@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-36-ea66b42092691d8d360e614af679730c
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406387714"
+isSender="true" 
+transactionId="z9hg4bk-383237-9f10611ce94bda8a6235c1b82f096612" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383237-9f10611ce94bda8a6235c1b82f096612
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406388262"
+isSender="false" 
+transactionId="z9hg4bk-383237-9f10611ce94bda8a6235c1b82f096612" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383237-9f10611ce94bda8a6235c1b82f096612;rport=47907
+CSeq: 1 INVITE
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406388270"
+isSender="false" 
+transactionId="z9hg4bk-383237-9f10611ce94bda8a6235c1b82f096612" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383237-9f10611ce94bda8a6235c1b82f096612;rport=47907
+CSeq: 1 INVITE
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406388274"
+isSender="true" 
+transactionId="z9hg4bk-383237-721cb17b3bb6261e9ce807c0e329f9b9" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383237-721cb17b3bb6261e9ce807c0e329f9b9
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406388376"
+isSender="true" 
+transactionId="z9hg4bk-383237-7c157e5c6be82131fa8e16c352a247dd" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383237-7c157e5c6be82131fa8e16c352a247dd
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406388382"
+isSender="false" 
+transactionId="z9hg4bk-383237-7c157e5c6be82131fa8e16c352a247dd" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383237-7c157e5c6be82131fa8e16c352a247dd;rport=47907
+CSeq: 2 INVITE
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406388420"
+isSender="false" 
+transactionId="z9hg4bk-383237-7c157e5c6be82131fa8e16c352a247dd" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383237-7c157e5c6be82131fa8e16c352a247dd;rport=47907
+CSeq: 2 INVITE
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406388423"
+isSender="true" 
+transactionId="z9hg4bk-383237-0a9211c378607e69eb0778dc2fc04dfd" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383237-0a9211c378607e69eb0778dc2fc04dfd
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:56777" 
+to="127.0.0.1:5061" 
+time="1459406388531"
+isSender="false" 
+transactionId="z9hg4bk-373033-c73348e5e2549f5cd13df367b17068ba" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-373033-c73348e5e2549f5cd13df367b17068ba;rport=56777
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:56777" 
+time="1459406388540"
+isSender="true" 
+transactionId="z9hg4bk-373033-c73348e5e2549f5cd13df367b17068ba" 
+callId="906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-373033-c73348e5e2549f5cd13df367b17068ba;rport=56777
+CSeq: 1 BYE
+Call-ID: 906a0734744cf7a1bcf4f353e47b3bf0@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406490568"
+isSender="true" 
+transactionId="z9hg4bk-363931-9698806ab00ffab36fed2866da7a47b3" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363931-9698806ab00ffab36fed2866da7a47b3
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406490771"
+isSender="false" 
+transactionId="z9hg4bk-363931-9698806ab00ffab36fed2866da7a47b3" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363931-9698806ab00ffab36fed2866da7a47b3;rport=35655
+CSeq: 1 INVITE
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406490783"
+isSender="false" 
+transactionId="z9hg4bk-363931-9698806ab00ffab36fed2866da7a47b3" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363931-9698806ab00ffab36fed2866da7a47b3;rport=35655
+CSeq: 1 INVITE
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406490786"
+isSender="true" 
+transactionId="z9hg4bk-363931-e0a13b9397136809dd86b565d8d28c4a" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363931-e0a13b9397136809dd86b565d8d28c4a
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406490889"
+isSender="true" 
+transactionId="z9hg4bk-363931-e04d34de002cc72c8f1b93485309295f" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363931-e04d34de002cc72c8f1b93485309295f
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406490895"
+isSender="false" 
+transactionId="z9hg4bk-363931-e04d34de002cc72c8f1b93485309295f" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363931-e04d34de002cc72c8f1b93485309295f;rport=35655
+CSeq: 2 INVITE
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406490932"
+isSender="false" 
+transactionId="z9hg4bk-363931-e04d34de002cc72c8f1b93485309295f" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363931-e04d34de002cc72c8f1b93485309295f;rport=35655
+CSeq: 2 INVITE
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406490935"
+isSender="true" 
+transactionId="z9hg4bk-363931-4fa9a9bf9ebece543b8b70cea86e6ce9" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363931-4fa9a9bf9ebece543b8b70cea86e6ce9
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:45387" 
+to="127.0.0.1:5061" 
+time="1459406491039"
+isSender="false" 
+transactionId="z9hg4bk-373033-67c8a864726e47b8649c7daf4075fcb2" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-373033-67c8a864726e47b8649c7daf4075fcb2;rport=45387
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:45387" 
+time="1459406491047"
+isSender="true" 
+transactionId="z9hg4bk-373033-67c8a864726e47b8649c7daf4075fcb2" 
+callId="53b923940832d77c0d2a7ae32bd2648c@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-373033-67c8a864726e47b8649c7daf4075fcb2;rport=45387
+CSeq: 1 BYE
+Call-ID: 53b923940832d77c0d2a7ae32bd2648c@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406604544"
+isSender="true" 
+transactionId="z9hg4bk-353133-99952c3948f375e9422a4bcfbdbb12dd" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353133-99952c3948f375e9422a4bcfbdbb12dd
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406604952"
+isSender="false" 
+transactionId="z9hg4bk-353133-99952c3948f375e9422a4bcfbdbb12dd" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353133-99952c3948f375e9422a4bcfbdbb12dd;rport=46025
+CSeq: 1 INVITE
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406604960"
+isSender="false" 
+transactionId="z9hg4bk-353133-99952c3948f375e9422a4bcfbdbb12dd" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353133-99952c3948f375e9422a4bcfbdbb12dd;rport=46025
+CSeq: 1 INVITE
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406604964"
+isSender="true" 
+transactionId="z9hg4bk-353133-6a3cea22ff2e2c3bbb74c8c5862b73fe" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353133-6a3cea22ff2e2c3bbb74c8c5862b73fe
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406605067"
+isSender="true" 
+transactionId="z9hg4bk-353133-7b4ff52d0da73dcf8da41d47bd9bffb5" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353133-7b4ff52d0da73dcf8da41d47bd9bffb5
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406605072"
+isSender="false" 
+transactionId="z9hg4bk-353133-7b4ff52d0da73dcf8da41d47bd9bffb5" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353133-7b4ff52d0da73dcf8da41d47bd9bffb5;rport=46025
+CSeq: 2 INVITE
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459406605112"
+isSender="false" 
+transactionId="z9hg4bk-353133-7b4ff52d0da73dcf8da41d47bd9bffb5" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353133-7b4ff52d0da73dcf8da41d47bd9bffb5;rport=46025
+CSeq: 2 INVITE
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406605115"
+isSender="true" 
+transactionId="z9hg4bk-353133-e9a4c40db51bd31986d98b38b4b626cc" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353133-e9a4c40db51bd31986d98b38b4b626cc
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:35287" 
+to="127.0.0.1:5061" 
+time="1459406605223"
+isSender="false" 
+transactionId="z9hg4bk-373033-f1b7131b3d469a1de4ef0fa98a997a39" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-373033-f1b7131b3d469a1de4ef0fa98a997a39;rport=35287
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:35287" 
+time="1459406605231"
+isSender="true" 
+transactionId="z9hg4bk-373033-f1b7131b3d469a1de4ef0fa98a997a39" 
+callId="153de539b338c1b5b77ba925e827c049@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-373033-f1b7131b3d469a1de4ef0fa98a997a39;rport=35287
+CSeq: 1 BYE
+Call-ID: 153de539b338c1b5b77ba925e827c049@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406672144"
+isSender="true" 
+transactionId="z9hg4bk-383638-d5e8ded3af155ce78cc256cca860e1a0" 
+callId="d5fd496c5dc20977e70228f56c1524ad@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: d5fd496c5dc20977e70228f56c1524ad@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383638-d5e8ded3af155ce78cc256cca860e1a0
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406784166"
+isSender="true" 
+transactionId="z9hg4bk-3539-523c53bc74c89757eb774a4653341dba" 
+callId="9dce775046bf9ccf2f59de0a4818bddf@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 9dce775046bf9ccf2f59de0a4818bddf@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-3539-523c53bc74c89757eb774a4653341dba
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406873428"
+isSender="true" 
+transactionId="z9hg4bk-343131-8f73da0ad8eb8d5d3dad84d47382629e" 
+callId="c4bde0028c49948b9007f68c8574490f@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: c4bde0028c49948b9007f68c8574490f@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343131-8f73da0ad8eb8d5d3dad84d47382629e
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459406995678"
+isSender="true" 
+transactionId="z9hg4bk-333439-167d1ac20b10858d8f62b28117059111" 
+callId="b9651aa62f5c10c0f873bf44281cdcd0@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: b9651aa62f5c10c0f873bf44281cdcd0@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333439-167d1ac20b10858d8f62b28117059111
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459407034720"
+isSender="true" 
+transactionId="z9hg4bk-3939-4e43e61a478693ba4d284516c8e6d13b" 
+callId="4413e3cdb7fe2abf1371dfab10189ca9@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 4413e3cdb7fe2abf1371dfab10189ca9@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-3939-4e43e61a478693ba4d284516c8e6d13b
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459407105684"
+isSender="true" 
+transactionId="z9hg4bk-353738-4f08349693788249640e6bfb9befb05f" 
+callId="48388333e354925a9172de5aa0e4ec9e@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 48388333e354925a9172de5aa0e4ec9e@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353738-4f08349693788249640e6bfb9befb05f
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459407195495"
+isSender="true" 
+transactionId="z9hg4bk-323436-65d5c48d2c57c0a52af610471d3389b4" 
+callId="6dcf6171cd80c9635ba689049a2145ec@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 6dcf6171cd80c9635ba689049a2145ec@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-323436-65d5c48d2c57c0a52af610471d3389b4
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459407396750"
+isSender="true" 
+transactionId="z9hg4bk-383539-d86ea2fdf9124d6f7fe29cda84dc9aa1" 
+callId="7fa7f718aa0453581260cefdfdf4c265@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 7fa7f718aa0453581260cefdfdf4c265@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383539-d86ea2fdf9124d6f7fe29cda84dc9aa1
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459408377790"
+isSender="true" 
+transactionId="z9hg4bk-373433-8749a13f198480898381d05aa934eff5" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373433-8749a13f198480898381d05aa934eff5
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459408378147"
+isSender="false" 
+transactionId="z9hg4bk-373433-8749a13f198480898381d05aa934eff5" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373433-8749a13f198480898381d05aa934eff5;rport=48719
+CSeq: 1 INVITE
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459408378155"
+isSender="false" 
+transactionId="z9hg4bk-373433-8749a13f198480898381d05aa934eff5" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373433-8749a13f198480898381d05aa934eff5;rport=48719
+CSeq: 1 INVITE
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459408378158"
+isSender="true" 
+transactionId="z9hg4bk-373433-a61f8061c742d276dfb386841037b1d0" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373433-a61f8061c742d276dfb386841037b1d0
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459408378260"
+isSender="true" 
+transactionId="z9hg4bk-373433-09bbdbce327395ad45db77e7bf28a4ab" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373433-09bbdbce327395ad45db77e7bf28a4ab
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459408378266"
+isSender="false" 
+transactionId="z9hg4bk-373433-09bbdbce327395ad45db77e7bf28a4ab" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373433-09bbdbce327395ad45db77e7bf28a4ab;rport=48719
+CSeq: 2 INVITE
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459408378304"
+isSender="false" 
+transactionId="z9hg4bk-373433-09bbdbce327395ad45db77e7bf28a4ab" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373433-09bbdbce327395ad45db77e7bf28a4ab;rport=48719
+CSeq: 2 INVITE
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459408378307"
+isSender="true" 
+transactionId="z9hg4bk-373433-a0ab830ae2aec788a9ccd9c64d856ddf" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar.com:5071;transport=TLS SIP/2.0
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373433-a0ab830ae2aec788a9ccd9c64d856ddf
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:56957" 
+to="127.0.0.1:5061" 
+time="1459408378418"
+isSender="false" 
+transactionId="z9hg4bk-323531-fcb47e3c32cb1aed0cc3b76c32b11161" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-323531-fcb47e3c32cb1aed0cc3b76c32b11161;rport=56957
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:56957" 
+time="1459408378426"
+isSender="true" 
+transactionId="z9hg4bk-323531-fcb47e3c32cb1aed0cc3b76c32b11161" 
+callId="4e6cac909dcef1e753976afeef9b570b@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-323531-fcb47e3c32cb1aed0cc3b76c32b11161;rport=56957
+CSeq: 1 BYE
+Call-ID: 4e6cac909dcef1e753976afeef9b570b@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459409233237"
+isSender="true" 
+transactionId="z9hg4bk-363737-65d5e9d5ee4890634a214e46de63f8e5" 
+callId="2508681858137a2fcfcffbbfa16626dc@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 2508681858137a2fcfcffbbfa16626dc@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363737-65d5e9d5ee4890634a214e46de63f8e5
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459409294662"
+isSender="true" 
+transactionId="z9hg4bk-363839-c6c6762b2b1f0eb564ff1497179c7a9e" 
+callId="9231a64669091368b0f2f8d6b91c65be@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 9231a64669091368b0f2f8d6b91c65be@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-363839-c6c6762b2b1f0eb564ff1497179c7a9e
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459409323612"
+isSender="true" 
+transactionId="z9hg4bk-353233-1fab5fbbbbcaee636524f6ae5eeccfac" 
+callId="fa87fa58a21bc429105cd8d778a5aeb3@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: fa87fa58a21bc429105cd8d778a5aeb3@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353233-1fab5fbbbbcaee636524f6ae5eeccfac
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459410960073"
+isSender="true" 
+transactionId="z9hg4bk-373735-a51452a99135bfb9db9af77284e452bd" 
+callId="24a4345b526e4724cc832f7575e64d81@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 24a4345b526e4724cc832f7575e64d81@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-373735-a51452a99135bfb9db9af77284e452bd
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459411020666"
+isSender="true" 
+transactionId="z9hg4bk-313333-9d4cb23504b5613681b35c36e148af71" 
+callId="7998ea8306dd52772421bf1c2d9461ee@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 7998ea8306dd52772421bf1c2d9461ee@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-313333-9d4cb23504b5613681b35c36e148af71
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459411489922"
+isSender="true" 
+transactionId="z9hg4bk-353636-675cb2d9a3191022249b5e51ceadfb02" 
+callId="11dd64f9593e0a696ac594c65e389db9@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 11dd64f9593e0a696ac594c65e389db9@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-353636-675cb2d9a3191022249b5e51ceadfb02
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459411605896"
+isSender="true" 
+transactionId="z9hg4bk-343135-454a042b3e91ed8146ca5e25bc7f9bb5" 
+callId="2da797229640086fd1017c137cdb8c88@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 2da797229640086fd1017c137cdb8c88@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343135-454a042b3e91ed8146ca5e25bc7f9bb5
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412302816"
+isSender="true" 
+transactionId="z9hg4bk-3730-f081ab8ef34565084823113035633b54" 
+callId="d650b08c2d18035609c24be3a2abd93c@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: d650b08c2d18035609c24be3a2abd93c@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-3730-f081ab8ef34565084823113035633b54
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412510393"
+isSender="true" 
+transactionId="z9hg4bk-333736-d05897be0ce9d1ad8eabed78213ca50d" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333736-d05897be0ce9d1ad8eabed78213ca50d
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412510771"
+isSender="false" 
+transactionId="z9hg4bk-333736-d05897be0ce9d1ad8eabed78213ca50d" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333736-d05897be0ce9d1ad8eabed78213ca50d;rport=33121
+CSeq: 1 INVITE
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412510778"
+isSender="false" 
+transactionId="z9hg4bk-333736-d05897be0ce9d1ad8eabed78213ca50d" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333736-d05897be0ce9d1ad8eabed78213ca50d;rport=33121
+CSeq: 1 INVITE
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412510781"
+isSender="true" 
+transactionId="z9hg4bk-333736-e1f6881cf6212c0235a8cf774aa0ca49" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333736-e1f6881cf6212c0235a8cf774aa0ca49
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412510883"
+isSender="true" 
+transactionId="z9hg4bk-333736-a575b54e03df7cce94badbba83e1d1ba" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333736-a575b54e03df7cce94badbba83e1d1ba
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412510890"
+isSender="false" 
+transactionId="z9hg4bk-333736-a575b54e03df7cce94badbba83e1d1ba" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333736-a575b54e03df7cce94badbba83e1d1ba;rport=33121
+CSeq: 2 INVITE
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412510929"
+isSender="false" 
+transactionId="z9hg4bk-333736-a575b54e03df7cce94badbba83e1d1ba" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333736-a575b54e03df7cce94badbba83e1d1ba;rport=33121
+CSeq: 2 INVITE
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412510931"
+isSender="true" 
+transactionId="z9hg4bk-333736-9de6f3897d7a6222ec2442d497122b9a" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333736-9de6f3897d7a6222ec2442d497122b9a
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:55888" 
+to="127.0.0.1:5061" 
+time="1459412511042"
+isSender="false" 
+transactionId="z9hg4bk-383231-35b5147dc17a3dbc716ca54f40815300" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-383231-35b5147dc17a3dbc716ca54f40815300;rport=55888
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:55888" 
+time="1459412511051"
+isSender="true" 
+transactionId="z9hg4bk-383231-35b5147dc17a3dbc716ca54f40815300" 
+callId="1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-383231-35b5147dc17a3dbc716ca54f40815300;rport=55888
+CSeq: 1 BYE
+Call-ID: 1d07f20ee557a40b84bd076f7f9cb1ea@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412781061"
+isSender="true" 
+transactionId="z9hg4bk-343732-d4a60a739dd44840fa5b91304d24fd51" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343732-d4a60a739dd44840fa5b91304d24fd51
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412781498"
+isSender="false" 
+transactionId="z9hg4bk-343732-d4a60a739dd44840fa5b91304d24fd51" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343732-d4a60a739dd44840fa5b91304d24fd51;rport=43879
+CSeq: 1 INVITE
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412781506"
+isSender="false" 
+transactionId="z9hg4bk-343732-d4a60a739dd44840fa5b91304d24fd51" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343732-d4a60a739dd44840fa5b91304d24fd51;rport=43879
+CSeq: 1 INVITE
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412781510"
+isSender="true" 
+transactionId="z9hg4bk-343732-88b747c6e779a9f3493412ff32cedde7" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343732-88b747c6e779a9f3493412ff32cedde7
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412781613"
+isSender="true" 
+transactionId="z9hg4bk-343732-badaa7d30e7ad855a217749de059092b" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343732-badaa7d30e7ad855a217749de059092b
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412781619"
+isSender="false" 
+transactionId="z9hg4bk-343732-badaa7d30e7ad855a217749de059092b" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343732-badaa7d30e7ad855a217749de059092b;rport=43879
+CSeq: 2 INVITE
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412781656"
+isSender="false" 
+transactionId="z9hg4bk-343732-badaa7d30e7ad855a217749de059092b" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343732-badaa7d30e7ad855a217749de059092b;rport=43879
+CSeq: 2 INVITE
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412781659"
+isSender="true" 
+transactionId="z9hg4bk-343732-e1d9a0ebb1bf3f792529ae58b1067300" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-343732-e1d9a0ebb1bf3f792529ae58b1067300
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:37848" 
+to="127.0.0.1:5061" 
+time="1459412781770"
+isSender="false" 
+transactionId="z9hg4bk-383139-63ea10baca47be338a6fb5dacd150813" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-383139-63ea10baca47be338a6fb5dacd150813;rport=37848
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:37848" 
+time="1459412781779"
+isSender="true" 
+transactionId="z9hg4bk-383139-63ea10baca47be338a6fb5dacd150813" 
+callId="dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-383139-63ea10baca47be338a6fb5dacd150813;rport=37848
+CSeq: 1 BYE
+Call-ID: dc72f00f893c3a5384fb85ebe7f942e6@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412850669"
+isSender="true" 
+transactionId="z9hg4bk-333738-0d1fdecf7be3fd47cb9e3985aa5f2d76" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-0d1fdecf7be3fd47cb9e3985aa5f2d76
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412851091"
+isSender="false" 
+transactionId="z9hg4bk-333738-0d1fdecf7be3fd47cb9e3985aa5f2d76" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-0d1fdecf7be3fd47cb9e3985aa5f2d76;rport=38147
+CSeq: 1 INVITE
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412851100"
+isSender="false" 
+transactionId="z9hg4bk-333738-0d1fdecf7be3fd47cb9e3985aa5f2d76" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-0d1fdecf7be3fd47cb9e3985aa5f2d76;rport=38147
+CSeq: 1 INVITE
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412851103"
+isSender="true" 
+transactionId="z9hg4bk-333738-c065367510b33f143651e439cf5a480e" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-c065367510b33f143651e439cf5a480e
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412851206"
+isSender="true" 
+transactionId="z9hg4bk-333738-e0b5e559d9d2a07e1d356d157d186953" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-e0b5e559d9d2a07e1d356d157d186953
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412851212"
+isSender="false" 
+transactionId="z9hg4bk-333738-e0b5e559d9d2a07e1d356d157d186953" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-e0b5e559d9d2a07e1d356d157d186953;rport=38147
+CSeq: 2 INVITE
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459412851253"
+isSender="false" 
+transactionId="z9hg4bk-333738-e0b5e559d9d2a07e1d356d157d186953" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-e0b5e559d9d2a07e1d356d157d186953;rport=38147
+CSeq: 2 INVITE
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459412851255"
+isSender="true" 
+transactionId="z9hg4bk-333738-838bc0444ff09f2ed55a4c21d32b9473" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-333738-838bc0444ff09f2ed55a4c21d32b9473
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:36606" 
+to="127.0.0.1:5061" 
+time="1459412851367"
+isSender="false" 
+transactionId="z9hg4bk-393832-14356e9723d7ea66aa276db637b34c89" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-393832-14356e9723d7ea66aa276db637b34c89;rport=36606
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:36606" 
+time="1459412851375"
+isSender="true" 
+transactionId="z9hg4bk-393832-14356e9723d7ea66aa276db637b34c89" 
+callId="ae07ced19401eda617a6d03215f301f6@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-393832-14356e9723d7ea66aa276db637b34c89;rport=36606
+CSeq: 1 BYE
+Call-ID: ae07ced19401eda617a6d03215f301f6@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459718769786"
+isSender="true" 
+transactionId="z9hg4bk-393635-23b167840d919efa8f9b65b200779933" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393635-23b167840d919efa8f9b65b200779933
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459718773419"
+isSender="false" 
+transactionId="z9hg4bk-393635-23b167840d919efa8f9b65b200779933" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393635-23b167840d919efa8f9b65b200779933;rport=42444
+CSeq: 1 INVITE
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459718773426"
+isSender="false" 
+transactionId="z9hg4bk-393635-23b167840d919efa8f9b65b200779933" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393635-23b167840d919efa8f9b65b200779933;rport=42444
+CSeq: 1 INVITE
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459718773429"
+isSender="true" 
+transactionId="z9hg4bk-393635-07467860cfeb1971ce63e81457a9e687" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393635-07467860cfeb1971ce63e81457a9e687
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459718776366"
+isSender="true" 
+transactionId="z9hg4bk-393635-4b464f728407a6f9f801dbfbba25b080" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393635-4b464f728407a6f9f801dbfbba25b080
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459718778103"
+isSender="false" 
+transactionId="z9hg4bk-393635-4b464f728407a6f9f801dbfbba25b080" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393635-4b464f728407a6f9f801dbfbba25b080;rport=42444
+CSeq: 2 INVITE
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459718778137"
+isSender="false" 
+transactionId="z9hg4bk-393635-4b464f728407a6f9f801dbfbba25b080" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393635-4b464f728407a6f9f801dbfbba25b080;rport=42444
+CSeq: 2 INVITE
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459718778139"
+isSender="true" 
+transactionId="z9hg4bk-393635-286ae862984f694ff7bdb5fc433c16e2" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393635-286ae862984f694ff7bdb5fc433c16e2
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:51598" 
+to="127.0.0.1:5061" 
+time="1459718778251"
+isSender="false" 
+transactionId="z9hg4bk-353137-ce6171edee3d5b3e999a451e6587657b" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-353137-ce6171edee3d5b3e999a451e6587657b;rport=51598
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:51598" 
+time="1459718778261"
+isSender="true" 
+transactionId="z9hg4bk-353137-ce6171edee3d5b3e999a451e6587657b" 
+callId="d66b9a4983a8a924e7dc001cd5069616@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-353137-ce6171edee3d5b3e999a451e6587657b;rport=51598
+CSeq: 1 BYE
+Call-ID: d66b9a4983a8a924e7dc001cd5069616@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459720684863"
+isSender="true" 
+transactionId="z9hg4bk-393631-402db34215395fa6c1bc751a698c1263" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393631-402db34215395fa6c1bc751a698c1263
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459720685070"
+isSender="false" 
+transactionId="z9hg4bk-393631-402db34215395fa6c1bc751a698c1263" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393631-402db34215395fa6c1bc751a698c1263;rport=59485
+CSeq: 1 INVITE
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459720685078"
+isSender="false" 
+transactionId="z9hg4bk-393631-402db34215395fa6c1bc751a698c1263" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393631-402db34215395fa6c1bc751a698c1263;rport=59485
+CSeq: 1 INVITE
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459720685082"
+isSender="true" 
+transactionId="z9hg4bk-393631-e89796a90d3b9ccee3b0ffffe038dbad" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393631-e89796a90d3b9ccee3b0ffffe038dbad
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459720685184"
+isSender="true" 
+transactionId="z9hg4bk-393631-6b2214879459e186d89d383b09b6c3fa" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393631-6b2214879459e186d89d383b09b6c3fa
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459720685189"
+isSender="false" 
+transactionId="z9hg4bk-393631-6b2214879459e186d89d383b09b6c3fa" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393631-6b2214879459e186d89d383b09b6c3fa;rport=59485
+CSeq: 2 INVITE
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459720685229"
+isSender="false" 
+transactionId="z9hg4bk-393631-6b2214879459e186d89d383b09b6c3fa" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393631-6b2214879459e186d89d383b09b6c3fa;rport=59485
+CSeq: 2 INVITE
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459720685231"
+isSender="true" 
+transactionId="z9hg4bk-393631-bb25a77c199eb4758ed6e81b7907b139" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-393631-bb25a77c199eb4758ed6e81b7907b139
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:53305" 
+to="127.0.0.1:5061" 
+time="1459720685331"
+isSender="false" 
+transactionId="z9hg4bk-353137-59b11bc6b92b31c02bba01030cd16529" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-353137-59b11bc6b92b31c02bba01030cd16529;rport=53305
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:53305" 
+time="1459720685342"
+isSender="true" 
+transactionId="z9hg4bk-353137-59b11bc6b92b31c02bba01030cd16529" 
+callId="98f00e672465b8d8cba8f92db555bfc7@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-353137-59b11bc6b92b31c02bba01030cd16529;rport=53305
+CSeq: 1 BYE
+Call-ID: 98f00e672465b8d8cba8f92db555bfc7@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= 127.0.0.1:5071/tls
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459720713098"
+isSender="true" 
+transactionId="z9hg4bk-383338-1874a2123686a3967fb1ec77e2b54b57" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5071 SIP/2.0
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383338-1874a2123686a3967fb1ec77e2b54b57
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5061;transport=tls>
+Certificate-Check: localhost
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Route: <sip:LittleGuy@127.0.0.1:5071;lr;transport=tls>
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459720713318"
+isSender="false" 
+transactionId="z9hg4bk-383338-1874a2123686a3967fb1ec77e2b54b57" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383338-1874a2123686a3967fb1ec77e2b54b57;rport=56998
+CSeq: 1 INVITE
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Type: application/sdp
+Content-Length: 31616
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459720713326"
+isSender="false" 
+transactionId="z9hg4bk-383338-1874a2123686a3967fb1ec77e2b54b57" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383338-1874a2123686a3967fb1ec77e2b54b57;rport=56998
+CSeq: 1 INVITE
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459720713328"
+isSender="true" 
+transactionId="z9hg4bk-383338-175175f99a0591bd5d41a5f795210ed8" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+CSeq: 1 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383338-175175f99a0591bd5d41a5f795210ed8
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459720713430"
+isSender="true" 
+transactionId="z9hg4bk-383338-ba70abd6f311657af4c7c8799c6e5a12" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[INVITE sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383338-ba70abd6f311657af4c7c8799c6e5a12
+CSeq: 2 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+Max-Forwards: 70
+Contact: <sip:127.0.0.1:5061;transport=tls>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459720713439"
+isSender="false" 
+transactionId="z9hg4bk-383338-ba70abd6f311657af4c7c8799c6e5a12" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="SIP/2.0 180 Ringing" 
+>
+<![CDATA[SIP/2.0 180 Ringing
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383338-ba70abd6f311657af4c7c8799c6e5a12;rport=56998
+CSeq: 2 INVITE
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5071" 
+to="127.0.0.1:5061" 
+time="1459720713472"
+isSender="false" 
+transactionId="z9hg4bk-383338-ba70abd6f311657af4c7c8799c6e5a12" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383338-ba70abd6f311657af4c7c8799c6e5a12;rport=56998
+CSeq: 2 INVITE
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Contact: "Shootme" <sips:foo-bar1.com:5071;transport=TLS>
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:5071" 
+time="1459720713475"
+isSender="true" 
+transactionId="z9hg4bk-383338-7249e1e1a31856ed2e6e95d7b1497848" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0" 
+>
+<![CDATA[ACK sips:foo-bar1.com:5071;transport=TLS SIP/2.0
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+CSeq: 2 ACK
+Via: SIP/2.0/TLS 127.0.0.1:5061;branch=z9hG4bK-383338-7249e1e1a31856ed2e6e95d7b1497848
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:40054" 
+to="127.0.0.1:5061" 
+time="1459720713571"
+isSender="false" 
+transactionId="z9hg4bk-353137-596ee9ca643dbb70ea0211aef8dbc445" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="BYE sip:127.0.0.1:5061;transport=tls SIP/2.0" 
+>
+<![CDATA[BYE sip:127.0.0.1:5061;transport=tls SIP/2.0
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-353137-596ee9ca643dbb70ea0211aef8dbc445;rport=40054
+CSeq: 1 BYE
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="127.0.0.1:5061" 
+to="127.0.0.1:40054" 
+time="1459720713578"
+isSender="true" 
+transactionId="z9hg4bk-353137-596ee9ca643dbb70ea0211aef8dbc445" 
+callId="56f53e6ea935e07c2788113463d98dbf@127.0.0.1" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+Via: SIP/2.0/TLS 127.0.0.1:5071;branch=z9hG4bK-353137-596ee9ca643dbb70ea0211aef8dbc445;rport=40054
+CSeq: 1 BYE
+Call-ID: 56f53e6ea935e07c2788113463d98dbf@127.0.0.1
+From: "The Little Blister" <sip:LittleGuy@there.com>;tag=4321
+Content-Length: 0
+
+]]>
+</message>
+

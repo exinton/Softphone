@@ -1,0 +1,19 @@
+[PropertyInfo]
+jButton2,JButton,false,false, , ,false,<default>
+jCheckBox1,JCheckBox,false,false, , ,false,<default>
+jLabel1,JLabel,false,false, , ,false,<default>
+jLabel3,JLabel,false,false, , ,false,<default>
+jLabel4,JLabel,false,false, , ,false,<default>
+jLabel5,JLabel,false,false, , ,false,<default>
+jScrollPane1,JScrollPane,false,false, , ,false,<default>
+jScrollPane2,JScrollPane,false,false, , ,false,<default>
+jTextArea1,JTextArea,false,false, , ,false,<default>
+jTextArea2,JTextArea,false,false, , ,false,<default>
+jTextField4,JTextField,false,false, , ,false,<default>
+list,SipproxyListener,false,false, , ,false,<default>
+xYLayout1,XYLayout,false,false, , ,false,<default>
+[IconNames]
+
+
+
+
