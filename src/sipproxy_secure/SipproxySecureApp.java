@@ -42,8 +42,9 @@ public class SipproxySecureApp {
   //Main method
   public static void main(String[] args) {
 	// setup TLS properties
-      System.setProperty( "javax.net.ssl.keyStore",  "/home/exinton/git/Softphone/src/tls/xintong.jks" );
-      System.setProperty( "javax.net.ssl.trustStore","/home/exinton/git/Softphone/src/tls/xintong.jks");
+	  String currentDir=System.getProperty("user.dir");
+      System.setProperty( "javax.net.ssl.keyStore",  currentDir+"/src/tls/xintong.jks" );
+      System.setProperty( "javax.net.ssl.trustStore",currentDir+"/src/tls/xintong.jks");
       System.setProperty( "javax.net.ssl.keyStorePassword", "tgq588" );
       System.setProperty( "javax.net.ssl.keyStoreType", "jks" );
 	  
