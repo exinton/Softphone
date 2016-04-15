@@ -103,7 +103,7 @@ public void showStatus(String text) {
     jTextField1.setSelectionEnd(18);
     jTextField1.setText("john@ocean.com");
     jTextField1.setBounds(new Rectangle(123, 65, 145, 18));
-    jTextField3.setText("sip:169.254.220.184:5060");
+    jTextField3.setText("sip:192.168.2.160:5060");
     jTextField3.setBounds(new Rectangle(3, 189, 198, 23));
     jLabel4.setText("My SIP port");
     jLabel4.setBounds(new Rectangle(1, 94, 54, 19));
@@ -167,7 +167,7 @@ public void showStatus(String text) {
     jLabel15.setText("My SIP server:");
     jLabel15.setBounds(new Rectangle(119, 95, 134, 19));
     jTextField7.setFont(new java.awt.Font("Dialog", 0, 11));
-    jTextField7.setText("169.254.235.127:5061");
+    jTextField7.setText("192.168.2.160:5061");
     jTextField7.setBounds(new Rectangle(125, 121, 141, 18));
     jTextField7.addActionListener(new Softphone3GUI_jTextField7_actionAdapter(this));
     jLabel16.setText("----------------------media configuration-----------------");

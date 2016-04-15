@@ -8,6 +8,8 @@ public class SdpInfo {
   public int aformat;
   public int vport;
   public int vformat;
+  
+  
 
  public SdpInfo() {
    IpAddress="";

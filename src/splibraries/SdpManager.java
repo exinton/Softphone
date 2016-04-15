@@ -8,7 +8,7 @@ public class SdpManager {
 
   SdpFactory mySdpFactory;
   SdpInfo mySdpInfo;
-  byte[] mySdpContent;
+  byte[] mySdpContent;		//byte array returned, we can append the key here
 
 
   public SdpManager() {
@@ -38,6 +38,8 @@ public class SdpManager {
     MediaDescription myAudioDescription = mySdpFactory.createMediaDescription("audio", sdpinfo.aport, 1, "RTP/AVP", aaf);
     Vector myMediaDescriptionVector=new Vector();
     myMediaDescriptionVector.add(myAudioDescription);
+    
+    
 
     if (sdpinfo.vport!=-1) {
      int[] avf=new int[1];

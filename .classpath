@@ -2,14 +2,14 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/sip-sdp.jar"/>
 	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/log4j.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/junit.jar"/>
+	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/junit.jar" sourcepath="/home/exinton/Downloads/trunk/trunk"/>
 	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/jakarta-regexp-1.5.jar"/>
 	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/customizer.jar"/>
 	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/concurrent.jar"/>
 	<classpathentry kind="lib" path="/home/exinton/JMF-2.1.1e/lib/multiplayer.jar"/>
 	<classpathentry kind="lib" path="/home/exinton/JMF-2.1.1e/lib/mediaplayer.jar"/>
 	<classpathentry kind="lib" path="/home/exinton/JMF-2.1.1e/lib/jmf.jar"/>
+	<classpathentry kind="lib" path="/home/exinton/Downloads/trunk/trunk/jain-sip-sdp-1.2.2389.jar" sourcepath="/home/exinton/Downloads/trunk/trunk/src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
