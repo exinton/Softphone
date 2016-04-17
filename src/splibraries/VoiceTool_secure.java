@@ -129,10 +129,10 @@ public void startMedia(String peerIP,int peerPort,int recvPort, int fmt) {
    DataSource ds = myProcessor.getDataOutput();		//source encoded data stream
    
    
-   SessionAddress localAddr =
-           new SessionAddress (InetAddress.getLocalHost(),recvPort);
    InetAddress destAddr = InetAddress.getByName(peerIP);
-   SessionAddress remoteAddr = new SessionAddress(destAddr, peerPort);
+   SessionAddress localAddr =
+       new SessionAddress (InetAddress.getLocalHost(),recvPort,InetAddress.getLocalHost(),recvPort + 1);
+   SessionAddress remoteAddr = new SessionAddress(destAddr, peerPort, destAddr, peerPort + 1);
    //We create a SessionManager
     rtpManager = RTPManager.newInstance();
 

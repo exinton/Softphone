@@ -7,12 +7,12 @@
 
 ## DataSource created: com.sun.media.protocol.javasound.DataSource@2bf35e0a
 
-$$ Profile: instantiation: 2 ms
+$$ Profile: instantiation: 1 ms
 
-## Processor created: com.sun.media.processor.unknown.Handler@55d44a0c
+## Processor created: com.sun.media.processor.unknown.Handler@19c50523
 ##   using DataSource: com.sun.media.protocol.javasound.DataSource@2bf35e0a
 
-$$ Profile: parsing: 3 ms
+$$ Profile: parsing: 4 ms
 
 ## Building flow graph for: javasound://44100
 
@@ -24,23 +24,23 @@ $$ Profile: parsing: 3 ms
     
 
 ## Here's the completed flow graph:
-      com.sun.media.parser.RawBufferParser@3da776fa
-         connects to: com.ibm.media.codec.audio.rc.RCModule@3d7436b5
+      com.sun.media.parser.RawBufferParser@7c14dcba
+         connects to: com.ibm.media.codec.audio.rc.RCModule@3da776fa
          format: LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
-      com.ibm.media.codec.audio.rc.RCModule@3d7436b5
-         connects to: com.ibm.media.codec.audio.ulaw.JavaEncoder@18b3c498
+      com.ibm.media.codec.audio.rc.RCModule@3da776fa
+         connects to: com.ibm.media.codec.audio.ulaw.JavaEncoder@3d7436b5
          format: LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
-      com.ibm.media.codec.audio.ulaw.JavaEncoder@18b3c498
-         connects to: com.sun.media.codec.audio.ulaw.Packetizer@422fe3d3
+      com.ibm.media.codec.audio.ulaw.JavaEncoder@3d7436b5
+         connects to: com.sun.media.codec.audio.ulaw.Packetizer@18b3c498
          format: ULAW, 8000.0 Hz, 8-bit, Mono, FrameSize=8 bits
-      com.sun.media.codec.audio.ulaw.Packetizer@422fe3d3
-         connects to: com.sun.media.multiplexer.RTPSyncBufferMux@56165397
+      com.sun.media.codec.audio.ulaw.Packetizer@18b3c498
+         connects to: com.sun.media.multiplexer.RTPSyncBufferMux@422fe3d3
          format: ULAW/rtp, 8000.0 Hz, 8-bit, Mono, FrameSize=8 bits
     
 
 $$ Profile: graph building: 124 ms
 
-$$ Profile: realize, post graph building: 41 ms
+$$ Profile: realize, post graph building: 40 ms
 
 ## Computed latency for video: 60 ms
 
