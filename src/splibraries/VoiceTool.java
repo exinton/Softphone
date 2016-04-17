@@ -21,6 +21,7 @@ public class VoiceTool implements ReceiveStreamListener {
   private ReceiveStream rs=null;
   private Player player=null;
   private AudioFormat af=null;
+  private RTPManager rtp =null;
 
   
 

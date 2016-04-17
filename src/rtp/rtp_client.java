@@ -9,7 +9,7 @@ public class rtp_client {
 		
 		VoiceTool myVoiceTool= new VoiceTool();
 		String destIP="192.168.2.202";
-		int destPort=4458,recvPort=4444,format=5;
+		int destPort=4458,recvPort=4444,format=3;
 		 System.out.println("start process1");
 		myVoiceTool.startMedia(destIP,destPort,recvPort,format);
 		
