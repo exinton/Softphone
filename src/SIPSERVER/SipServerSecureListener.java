@@ -10,7 +10,6 @@ import javax.sip.address.*;
 import java.net.*;
 import java.util.*;
 
-import splibraries.*;
 import java.security.NoSuchAlgorithmException;
 
 import gov.nist.javax.sip.clientauthutils.*;

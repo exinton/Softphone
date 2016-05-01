@@ -17,7 +17,7 @@ import gnu.java.zrtp.ZrtpUserCallback;
 import gnu.java.zrtp.jmf.transform.TransformManager;
 import gnu.java.zrtp.jmf.transform.zrtp.ZRTPTransformEngine;
 import gnu.java.zrtp.jmf.transform.zrtp.ZrtpTransformConnector;
-
+import Configuration.SoftPhoneConfiguration;
 import java.util.*;
 
 
@@ -34,7 +34,7 @@ public class VoiceTool_secure implements ReceiveStreamListener{
   private AudioFormat af=null;
   private ZrtpTransformConnector transConnector = null;
   private ZRTPTransformEngine zrtpEngine = null;
-
+  private SoftPhoneConfiguration myconfig=SoftPhoneConfiguration.getInstance();
   protected class MyCallback extends ZrtpUserCallback {
       MyCallback() {
       }
@@ -158,8 +158,9 @@ public void startMedia(String peerIP,int peerPort,int recvPort, String fmt) {
     
     
     
-    
-    if (!zrtpEngine.initialize("test_t.zid", config))
+    String currentDir=System.getProperty("user.dir");
+    String zidPath=currentDir+myconfig.zrtpPath;
+    if (!zrtpEngine.initialize(zidPath, config))
         System.err.println("Initialize failed");
 
     int versions = zrtpEngine.getNumberSupportedVersions();

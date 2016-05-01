@@ -16,9 +16,7 @@ import javax.sip.address.*;
 
 import java.net.*;
 import java.util.*;
-import java.lang.*;
 
-import splibraries.*;
 import gov.nist.javax.sip.SipStackExt;
 import gov.nist.javax.sip.clientauthutils.AuthenticationHelper;
 

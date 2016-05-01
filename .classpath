@@ -2,17 +2,17 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/log4j.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/junit.jar" sourcepath="/home/exinton/Downloads/trunk/trunk"/>
-	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/jakarta-regexp-1.5.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/git/Softphone/Extension libraries/concurrent.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/Downloads/trunk/trunk/jain-sip-sdp-1.2.2389.jar" sourcepath="/home/exinton/Downloads/trunk/trunk/src"/>
-	<classpathentry kind="lib" path="/home/exinton/git/ZRTP4J/lib/junit-3.8.1.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/git/ZRTP4J/dist/zrtp4j-light.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/git/ZRTP4J/dist/zrtp4j-4.1.0.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/git/ZRTP4J/dist/zrtp4j-full-4.1.0.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/git/ZRTP4J/lib/bcprov-jdk15on-148.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/git/ZRTP4J/lib/bccontrib-1.0-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="/home/exinton/Downloads/JMF-2.1.1e/lib/jmf.jar"/>
+	<classpathentry kind="lib" path="lib/bccontrib-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/bcprov-jdk15on-148.jar"/>
+	<classpathentry kind="lib" path="lib/concurrent.jar"/>
+	<classpathentry kind="lib" path="lib/customizer.jar"/>
+	<classpathentry kind="lib" path="lib/jain-sip-sdp-1.2.2389.jar"/>
+	<classpathentry kind="lib" path="lib/jain-sip-src-1.2.2389.jar"/>
+	<classpathentry kind="lib" path="lib/jmf-2.1.1e.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/log4j.jar"/>
+	<classpathentry kind="lib" path="lib/mediaplayer.jar"/>
+	<classpathentry kind="lib" path="lib/multiplayer.jar"/>
+	<classpathentry kind="lib" path="lib/zrtp4j-full-4.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

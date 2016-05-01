@@ -16,6 +16,7 @@ public class SoftPhoneConfiguration {
 	//transport type, could be UDP,TCP,TLS
 	public  String transport;
 	public final String keyStoreFilePath="/src/keyfile/softphone.jks";
+	public final String zrtpPath="/src/keyfile/test_t.zid";
 	public final String keyStorePassword="tgq588";
 	public final String keyStoreType="jks";
 	public final String PROXY_REALM = "nist.gov";
