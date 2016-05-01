@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+/**
+ * @author exinton
+ *
+ */
+package MediaAdapter;

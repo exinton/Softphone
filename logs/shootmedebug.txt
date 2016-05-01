@@ -1,0 +1,58 @@
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:273) [Here are the stack configuration properties 
+{gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=shootme, gov.nist.javax.sip.SERVER_LOG=logs/shootmelog.txt, gov.nist.javax.sip.DEBUG_LOG=logs/shootmedebug.txt, gov.nist.javax.sip.READ_TIMEOUT=1000}
+]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:276) [ ]]>]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:277) [</debug>]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:278) [<description
+ logDescription="shootme"
+ name="null" />
+]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:284) [<debug>]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:285) [<![CDATA[ ]
+DEBUG - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:666) [createListeningPoint : address = 127.0.0.1 port = 5071 transport = tls]
+DEBUG - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:703) [Created Message Processor: 127.0.0.1 port = 5071 transport = tls]
+DEBUG - gov.nist.javax.sip.stack.MessageProcessor.setListeningPoint(MessageProcessor.java:179) [setListeningPointgov.nist.javax.sip.stack.TLSMessageProcessor@40779d17 listeningPoint = gov.nist.javax.sip.ListeningPointImpl@6cea7211]
+DEBUG - gov.nist.javax.sip.SipStackImpl.createSipProvider(SipStackImpl.java:734) [createSipProvider: gov.nist.javax.sip.ListeningPointImpl@6cea7211]
+DEBUG - gov.nist.javax.sip.SipProviderImpl.addSipListener(SipProviderImpl.java:203) [add SipListener tls.Shootme@b55e35a]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:273) [Here are the stack configuration properties 
+{gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=shootme, gov.nist.javax.sip.SERVER_LOG=logs/shootmelog.txt, gov.nist.javax.sip.DEBUG_LOG=logs/shootmedebug.txt, gov.nist.javax.sip.READ_TIMEOUT=1000}
+]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:276) [ ]]>]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:277) [</debug>]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:278) [<description
+ logDescription="shootme"
+ name="null" />
+]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:284) [<debug>]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:285) [<![CDATA[ ]
+DEBUG - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:666) [createListeningPoint : address = 127.0.0.1 port = 5071 transport = tls]
+DEBUG - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:703) [Created Message Processor: 127.0.0.1 port = 5071 transport = tls]
+DEBUG - gov.nist.javax.sip.stack.MessageProcessor.setListeningPoint(MessageProcessor.java:179) [setListeningPointgov.nist.javax.sip.stack.TLSMessageProcessor@75e8d4ce listeningPoint = gov.nist.javax.sip.ListeningPointImpl@8eb5cdc]
+DEBUG - gov.nist.javax.sip.SipStackImpl.createSipProvider(SipStackImpl.java:734) [createSipProvider: gov.nist.javax.sip.ListeningPointImpl@8eb5cdc]
+DEBUG - gov.nist.javax.sip.SipProviderImpl.addSipListener(SipProviderImpl.java:203) [add SipListener tls.Shootme@3e724328]
+DEBUG - gov.nist.javax.sip.stack.TLSMessageProcessor.run(TLSMessageProcessor.java:160) [Accepting new connection!]
+DEBUG - gov.nist.javax.sip.stack.TLSMessageChannel.<init>(TLSMessageChannel.java:126) [creating new TLSMessageChannel ]
+DEBUG - gov.nist.core.LogWriter.logStackTrace(LogWriter.java:121) [[TLSMessageChannel.java:127][TLSMessageProcessor.java:164][Thread.java:745]]
+DEBUG - gov.nist.javax.sip.stack.TLSMessageChannel.run(TLSMessageChannel.java:612) [IOException  closing sock javax.net.ssl.SSLHandshakeException: no cipher suites in common]
+DEBUG - gov.nist.javax.sip.stack.TLSMessageProcessor.remove(TLSMessageProcessor.java:220) [Thread[TLSMessageChannelThread,5,main] removing tls:127.0.0.1:0]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:273) [Here are the stack configuration properties 
+{gov.nist.javax.sip.TRACE_LEVEL=32, javax.sip.STACK_NAME=shootme, gov.nist.javax.sip.SERVER_LOG=logs/shootmelog.txt, gov.nist.javax.sip.DEBUG_LOG=logs/shootmedebug.txt, gov.nist.javax.sip.READ_TIMEOUT=1000}
+]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:276) [ ]]>]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:277) [</debug>]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:278) [<description
+ logDescription="shootme"
+ name="null" />
+]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:284) [<debug>]
+DEBUG - gov.nist.javax.sip.stack.ServerLog.checkLogFile(ServerLog.java:285) [<![CDATA[ ]
+DEBUG - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:666) [createListeningPoint : address = 127.0.0.1 port = 5071 transport = tls]
+DEBUG - gov.nist.javax.sip.SipStackImpl.createListeningPoint(SipStackImpl.java:703) [Created Message Processor: 127.0.0.1 port = 5071 transport = tls]
+DEBUG - gov.nist.javax.sip.stack.MessageProcessor.setListeningPoint(MessageProcessor.java:179) [setListeningPointgov.nist.javax.sip.stack.TLSMessageProcessor@67392596 listeningPoint = gov.nist.javax.sip.ListeningPointImpl@58d2cfcb]
+DEBUG - gov.nist.javax.sip.SipStackImpl.createSipProvider(SipStackImpl.java:734) [createSipProvider: gov.nist.javax.sip.ListeningPointImpl@58d2cfcb]
+DEBUG - gov.nist.javax.sip.SipProviderImpl.addSipListener(SipProviderImpl.java:203) [add SipListener tls.Shootme@4eef9712]
+DEBUG - gov.nist.javax.sip.stack.TLSMessageProcessor.run(TLSMessageProcessor.java:160) [Accepting new connection!]
+DEBUG - gov.nist.javax.sip.stack.TLSMessageChannel.<init>(TLSMessageChannel.java:126) [creating new TLSMessageChannel ]
+DEBUG - gov.nist.core.LogWriter.logStackTrace(LogWriter.java:121) [[TLSMessageChannel.java:127][TLSMessageProcessor.java:164][Thread.java:745]]
+DEBUG - gov.nist.javax.sip.stack.TLSMessageChannel.run(TLSMessageChannel.java:612) [IOException  closing sock javax.net.ssl.SSLHandshakeException: no cipher suites in common]
+DEBUG - gov.nist.javax.sip.stack.TLSMessageProcessor.remove(TLSMessageProcessor.java:220) [Thread[TLSMessageChannelThread,5,main] removing tls:127.0.0.1:0]

@@ -2,41 +2,30 @@
 # JMF Version 2.1.1e
 #
 
-## Platform: Linux, amd64, 4.2.0-34-generic
+## Platform: Linux, amd64, 4.2.0-35-generic
 ## Java VM: Oracle Corporation, 1.7.0_95
 
-## DataSource created: com.sun.media.protocol.javasound.DataSource@48a85972
+## DataSource created: com.sun.media.protocol.javasound.DataSource@22f4bf02
 
 $$ Profile: instantiation: 2 ms
 
-## Processor created: com.sun.media.processor.unknown.Handler@71482d87
-##   using DataSource: com.sun.media.protocol.javasound.DataSource@48a85972
+## Processor created: com.sun.media.processor.unknown.Handler@33557fe4
+##   using DataSource: com.sun.media.protocol.javasound.DataSource@22f4bf02
 
-$$ Profile: parsing: 4 ms
+$$ Profile: parsing: 3 ms
 
 ## Building flow graph for: javasound://44100
 
 ## Building Track: 0
-## Input: LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
+## Input: LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+## Custom options specified.
+## An output format is specified: gsm/rtp, 8000.0 Hz, 8-bit, Mono
 ## An output content type is specified: RAW/RTP
-## Failed to open plugin com.sun.media.codec.audio.mpa.NativeEncoder@6a5dd151. Will re-build the graph allover again
+XX Failed to realize: com.sun.media.ProcessEngine@4bfbe10a
+XX   Cannot build a flow graph with the customized options:
+XX     Unable to transcode format: LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+XX       to: gsm/rtp, 8000.0 Hz, 8-bit, Mono
+XX       outputting to: RAW/RTP
+    
 
-
-## Here's the completed flow graph:
-  com.sun.media.parser.RawBufferParser@4d20f4c8
-     connects to: com.ibm.media.codec.audio.rc.RCModule@2ea69e07
-     format: LINEAR, 44100.0 Hz, 16-bit, Stereo, LittleEndian, Signed
-  com.ibm.media.codec.audio.rc.RCModule@2ea69e07
-     connects to: com.ibm.media.codec.audio.dvi.JavaEncoder@3cd0f57e
-     format: LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
-  com.ibm.media.codec.audio.dvi.JavaEncoder@3cd0f57e
-     connects to: com.sun.media.multiplexer.RTPSyncBufferMux@3aa54263
-     format: dvi/rtp, 8000.0 Hz, 4-bit, Mono
-
-
-$$ Profile: graph building: 96 ms
-
-$$ Profile: realize, post graph building: 42 ms
-
-## Computed latency for video: 60 ms
-
+XX Error: Unable to realize com.sun.media.ProcessEngine@4bfbe10a
