@@ -5,42 +5,27 @@
 ## Platform: Linux, amd64, 4.2.0-35-generic
 ## Java VM: Oracle Corporation, 1.7.0_95
 
-## DataSource created: com.sun.media.protocol.javasound.DataSource@2bf35e0a
+## DataSource created: com.sun.media.protocol.javasound.DataSource@22f4bf02
 
-$$ Profile: instantiation: 1 ms
+$$ Profile: instantiation: 2 ms
 
-## Processor created: com.sun.media.processor.unknown.Handler@19c50523
-##   using DataSource: com.sun.media.protocol.javasound.DataSource@2bf35e0a
+## Processor created: com.sun.media.processor.unknown.Handler@33557fe4
+##   using DataSource: com.sun.media.protocol.javasound.DataSource@22f4bf02
 
-$$ Profile: parsing: 4 ms
+$$ Profile: parsing: 3 ms
 
 ## Building flow graph for: javasound://44100
 
 ## Building Track: 0
-## Input: LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
+## Input: LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
 ## Custom options specified.
-## An output format is specified: ULAW/rtp, 8000.0 Hz, 8-bit, Mono
+## An output format is specified: gsm/rtp, 8000.0 Hz, 8-bit, Mono
 ## An output content type is specified: RAW/RTP
+XX Failed to realize: com.sun.media.ProcessEngine@4bfbe10a
+XX   Cannot build a flow graph with the customized options:
+XX     Unable to transcode format: LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
+XX       to: gsm/rtp, 8000.0 Hz, 8-bit, Mono
+XX       outputting to: RAW/RTP
     
 
-## Here's the completed flow graph:
-      com.sun.media.parser.RawBufferParser@7c14dcba
-         connects to: com.ibm.media.codec.audio.rc.RCModule@3da776fa
-         format: LINEAR, 44100.0 Hz, 16-bit, Mono, LittleEndian, Signed
-      com.ibm.media.codec.audio.rc.RCModule@3da776fa
-         connects to: com.ibm.media.codec.audio.ulaw.JavaEncoder@3d7436b5
-         format: LINEAR, 8000.0 Hz, 16-bit, Mono, LittleEndian, Signed
-      com.ibm.media.codec.audio.ulaw.JavaEncoder@3d7436b5
-         connects to: com.sun.media.codec.audio.ulaw.Packetizer@18b3c498
-         format: ULAW, 8000.0 Hz, 8-bit, Mono, FrameSize=8 bits
-      com.sun.media.codec.audio.ulaw.Packetizer@18b3c498
-         connects to: com.sun.media.multiplexer.RTPSyncBufferMux@422fe3d3
-         format: ULAW/rtp, 8000.0 Hz, 8-bit, Mono, FrameSize=8 bits
-    
-
-$$ Profile: graph building: 124 ms
-
-$$ Profile: realize, post graph building: 40 ms
-
-## Computed latency for video: 60 ms
-
+XX Error: Unable to realize com.sun.media.ProcessEngine@4bfbe10a

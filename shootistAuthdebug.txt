@@ -5518,3 +5518,132 @@ INFO - Setting SIPMessage peerPacketSource to: /127.0.0.1:5070
 INFO - Setting SIPMessage peerPacketSource to: /127.0.0.1:5070
 INFO - Setting SIPMessage peerPacketSource to: /127.0.0.1:5070
 INFO - Setting SIPMessage peerPacketSource to: /127.0.0.1:5070
+INFO - value -1000 will be used for reliableConnectionKeepAliveTimeout stack property
+INFO - Setting Stack Thread priority to 10
+WARN - using default tls security policy
+WARN - Using default keystore type jks
+WARN - TLS server settings will be inactive - TLS key store will use JVM defaults keyStoreType=jks javax.net.ssl.keyStore=null javax.net.ssl.keyStorePassword=null
+INFO - javax.net.ssl.trustStorePassword is null, using the password passed through javax.net.ssl.keyStorePassword
+WARN - Using default truststore type jks
+WARN - TLS trust settings will be inactive - TLS trust store will use JVM defaults. trustStoreType=jks javax.net.ssl.trustStore=null javax.net.ssl.trustStorePassword=null
+INFO - the sip stack timer gov.nist.javax.sip.stack.timers.DefaultSipTimer has been started
+INFO - <message
+from="127.0.0.1:5060" 
+to="127.0.0.1:5070" 
+time="1460966619506"
+isSender="true" 
+transactionId="z9hg4bk-393333-82703370b33cd4a0e70d477b7f0058ce" 
+callId="d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0
+Call-ID: d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK-393333-82703370b33cd4a0e70d477b7f0058ce
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5060>
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Content-Length: 247
+
+]]>
+</message>
+
+INFO - <message
+from="127.0.0.1:5060" 
+to="127.0.0.1:5070" 
+time="1460966620011"
+isSender="true" 
+transactionId="z9hg4bk-393333-82703370b33cd4a0e70d477b7f0058ce" 
+callId="d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0
+Call-ID: d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK-393333-82703370b33cd4a0e70d477b7f0058ce
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5060>
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Content-Length: 247
+
+]]>
+</message>
+
+INFO - <message
+from="127.0.0.1:5060" 
+to="127.0.0.1:5070" 
+time="1460966621010"
+isSender="true" 
+transactionId="z9hg4bk-393333-82703370b33cd4a0e70d477b7f0058ce" 
+callId="d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0
+Call-ID: d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK-393333-82703370b33cd4a0e70d477b7f0058ce
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5060>
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Content-Length: 247
+
+]]>
+</message>
+
+INFO - <message
+from="127.0.0.1:5060" 
+to="127.0.0.1:5070" 
+time="1460966623010"
+isSender="true" 
+transactionId="z9hg4bk-393333-82703370b33cd4a0e70d477b7f0058ce" 
+callId="d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0
+Call-ID: d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK-393333-82703370b33cd4a0e70d477b7f0058ce
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5060>
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Content-Length: 247
+
+]]>
+</message>
+
+INFO - <message
+from="127.0.0.1:5060" 
+to="127.0.0.1:5070" 
+time="1460966627011"
+isSender="true" 
+transactionId="z9hg4bk-393333-82703370b33cd4a0e70d477b7f0058ce" 
+callId="d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1" 
+firstLine="INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0" 
+>
+<![CDATA[INVITE sip:LittleGuy@127.0.0.1:5070 SIP/2.0
+Call-ID: d5a8324d0ce77516457371a8e7ac2b4a@127.0.0.1
+CSeq: 1 INVITE
+From: "The Master Blaster" <sip:BigGuy@here.com>;tag=12345
+To: "The Little Blister" <sip:LittleGuy@there.com>
+Via: SIP/2.0/UDP 127.0.0.1:5060;branch=z9hG4bK-393333-82703370b33cd4a0e70d477b7f0058ce
+Max-Forwards: 70
+Contact: "BigGuy" <sip:BigGuy@127.0.0.1:5060>
+Content-Type: application/sdp
+Call-Info: <http://www.antd.nist.gov>
+Content-Length: 247
+
+]]>
+</message>
+
