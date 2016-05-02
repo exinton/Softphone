@@ -36,10 +36,11 @@ This project is an academic project which aims to improve student's understandin
 ### Import to your Eclipse IDE
 * download the Softphone-master.zip
 * import this archive into your Eclipse
-* check the audio device by launching the JMFregistery under JMF-2.1.1e/bin/jmfreigistry
-* import jmf configure file in to library by copying the JMF-2.1.1e/lib/jmf.properties into /lib
 * make sure external libraries work fine
 * check the /keyfile folder 's key files
+* if media device could not be found , try the following 2 steps
+* [option]check the audio device by launching the JMFregistery under JMF-2.1.1e/bin/jmfreigistry
+* [option]import jmf configure file in to library by copying the JMF-2.1.1e/lib/jmf.properties into /lib
 
 #### How to use it
 
