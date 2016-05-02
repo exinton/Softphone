@@ -1,35 +1,35 @@
 # Project Description
 
-### introduction
+## introduction
 This project is an academic project which aims to improve student's understanding of network security. It's based on exising soft without any security , and add security features on it.
 
-### Demo
-#### sip registration test case screen capture  https://youtu.be/KtEnXZet6dI
-#### sip to sip call screen capture with cc  https://youtu.be/syAmNMXW5cE
-#### sip to sip demo recording with explain  https://youtu.be/3LOwxai1c0s
+## Demo
+### sip registration test case screen capture  https://youtu.be/KtEnXZet6dI
+### sip to sip call screen capture with cc  https://youtu.be/syAmNMXW5cE
+### sip to sip demo recording with explain  https://youtu.be/3LOwxai1c0s
 
 
-### Team member
+## Team member
 
 Xin Tong:design and TLS/Media encryption code and test verification,writing the project description.
 Xiangyu :Registration authentication part
 Guhan : GUI part
 
-### Version
+## Version
 0.9
 
-### Background
+## Background
 This project is based on existing simple softphone/sipserver program by Rogelio Martinez. However, the origin version only support unauthorized sip register, unencrypted UDP transport and unencrypted media transportation. 
 This simple program by Rogelio is base on JAIN (Java APIs for Integrated Networks). The original one  use JAIN 1.0 version and we use JAIN 1.2. We use SDP adapter to form simple SDP message because there is no complicated SDP handling case in our project.
 Our purpose is to add three main security features to the existing softphone/sipserver. The source code’s download address is http://booksite.elsevier.com/9780123743008/?ISBN=9780123743008.
 Our project consists three phase. First phase is to add TLS to the SIP messages. The second phase is to add media plain encryption. The last phase is to add authentication of sip registration.
 
-### 3rd party libraries:
+## 3rd party libraries:
     
-#### provides SIP stack  [Jain 1.2.2] [jain]      
-#### Provides ZRTP library [ZRTP-4J-FULL] [zrtp]	    
-#### provides Media play, media devices supported	 [jmf-2.1.1e] [jmf]		
-#### required by ZRTP library [bcpprove-jdk] [bcp]
+* provides SIP stack  [Jain 1.2.2] [jain]      
+* Provides ZRTP library [ZRTP-4J-FULL] [zrtp]	    
+* provides Media play, media devices supported	 [jmf-2.1.1e] [jmf]		
+* required by ZRTP library [bcpprove-jdk] [bcp]
 
 
 ### Installation
