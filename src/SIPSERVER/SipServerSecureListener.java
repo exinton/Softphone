@@ -16,7 +16,7 @@ public class SipServerSecureListener implements SipListener{
 
 
 private SipServerConfiguration myconfig = SipServerConfiguration.getInstance();
-private final String transport=myconfig.transport;
+private String transport="";
 private SipFactory mySipFactory;
 private SipStack mySipStack;
 private ListeningPoint myListeningPoint;
@@ -49,11 +49,12 @@ private ArrayList transactionContext;
     
   
   	try{
-
+  		
+  	  transport=(String) GUI.comboBox.getSelectedItem();
+  		
       myDomain=domain;
       recordRoute=recroute;
       myGUI = GUI;
-
       myIP = InetAddress.getLocalHost().getHostAddress();
       myPort = port;
       myGUI.jLabel5.setText("Initialized at IP "+ myIP+", port "+myPort);

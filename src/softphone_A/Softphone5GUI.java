@@ -33,9 +33,9 @@ public class Softphone5GUI extends JFrame {
   JTextField jTextField5 = new JTextField();
   JTextField jTextField6 = new JTextField();
   JLabel jLabel11 = new JLabel();
-  JComboBox jComboBox1 = new JComboBox();
+  JComboBox<String> jComboBox1 = new JComboBox();
   JLabel jLabel12 = new JLabel();
-  JComboBox jComboBox2 = new JComboBox();
+  JComboBox<String> jComboBox2 = new JComboBox();
   JLabel jLabel13 = new JLabel();
 
   JLabel jLabel14 = new JLabel();

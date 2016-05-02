@@ -33,6 +33,7 @@ public class SipServerSecureGUI extends JFrame {
   JTextField jTextField1 = new JTextField();
   JLabel jLabel6 = new JLabel();
   JLabel jLabel7 = new JLabel();
+  JComboBox<String> comboBox =new JComboBox<String>();
   private final JLabel lblTransport = new JLabel("transport");
 
   public SipServerSecureGUI() {
@@ -163,7 +164,6 @@ public void appendOngoingTransactionsDisplay(String text) {
     label.setBounds(22, 353, 700, 23);
     getContentPane().add(label);
     
-    JComboBox comboBox = new JComboBox();
     comboBox.setBounds(515, 52, 88, 25);
     getContentPane().add(comboBox);
     lblTransport.setBounds(440, 52, 70, 15);
@@ -171,6 +171,7 @@ public void appendOngoingTransactionsDisplay(String text) {
     comboBox.addItem("UDP");
     comboBox.addItem("TCP");
     comboBox.addItem("TLS");
+    
     
 
   }
