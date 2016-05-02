@@ -4,16 +4,16 @@
 This project is an academic project which aims to improve student's understanding of network security. It's based on exising soft without any security , and add security features on it.
 
 ## Demo
-### sip registration test case screen capture  https://youtu.be/KtEnXZet6dI
-### sip to sip call screen capture with cc  https://youtu.be/syAmNMXW5cE
-### sip to sip demo recording with explain  https://youtu.be/3LOwxai1c0s
+### [Demo 1: sip registration test case screen capture] [demo-registration]
+### [Demo 2: sip to sip call screen capture with cc]  [demo-sip-call-screen]
+### [Demo 3: sip to sip demo recording with explain] [demo-sip-calllive]
 
 
 ## Team member
 
 Xin Tong:design and TLS/Media encryption code and test verification,writing the project description.
 Xiangyu :Registration authentication part
-Guhan : GUI part
+Guhan : GUI part development
 
 ## Version
 0.9
@@ -32,20 +32,14 @@ Our project consists three phase. First phase is to add TLS to the SIP messages.
 * required by ZRTP library [bcpprove-jdk] [bcp]
 
 
-### Installation
-
-You need Gulp installed globally:
-
-
-### Development
+### Import to your Eclipse IDE
 
 
 
-### N|Solid and NGINX
 
-More details coming soon.
 
-#### docker-compose.yml
+
+#### How to use it
 
 Change the path for the nginx conf mounting path to your full path, not mine!
 
@@ -69,3 +63,6 @@ MIT
 [zrtp]:<https://github.com/wernerd/ZRTP4PJ>
 [jmf]:<http://www.oracle.com/technetwork/java/javase/download-142937.html>
 [bcp]: <https://www.bouncycastle.org/latest_releases.html>
+[demo-registration]: <https://youtu.be/KtEnXZet6dI>
+[demo-sip-call-screen]: <https://youtu.be/syAmNMXW5cE>
+[demo-sip-calllive]: <https://youtu.be/3LOwxai1c0s>
