@@ -11,18 +11,19 @@ This project is an academic project which aims to improve student's understandin
 
 ## Team member
 
-Xin Tong:design and TLS/Media encryption code and test verification,writing the project description.
-Xiangyu :Registration authentication part
-Guhan : GUI part development
+* Xin Tong:design and TLS/Media encryption code and test verification,writing the project description.
+* Xiangyu :Registration authentication part
+* Senthil Kumar Guhan : GUI part development
 
 ## Version
 0.9
 
 ## Background
-This project is based on existing simple softphone/sipserver program by Rogelio Martinez. However, the origin version only support unauthorized sip register, unencrypted UDP transport and unencrypted media transportation. 
-This simple program by Rogelio is base on JAIN (Java APIs for Integrated Networks). The original one  use JAIN 1.0 version and we use JAIN 1.2. We use SDP adapter to form simple SDP message because there is no complicated SDP handling case in our project.
-Our purpose is to add three main security features to the existing softphone/sipserver. The source code’s download address is http://booksite.elsevier.com/9780123743008/?ISBN=9780123743008.
-Our project consists three phase. First phase is to add TLS to the SIP messages. The second phase is to add media plain encryption. The last phase is to add authentication of sip registration.
+* This project is based on existing simple softphone/sipserver program by Rogelio Martinez. However, the origin version only support unauthorized sip register, unencrypted UDP transport and unencrypted media transportation. 
+* This simple program by Rogelio is base on JAIN (Java APIs for Integrated Networks). The original one  use JAIN 1.0 version and we use JAIN 1.2. We use SDP adapter to form simple SDP message because there is no complicated SDP handling case in our project.
+* Our purpose is to add three main security features to the existing softphone/sipserver. 
+* The source code’s download address is http://booksite.elsevier.com/9780123743008/?ISBN=9780123743008.
+* Our project consists three phase. First phase is to add TLS to the SIP messages. The second phase is to add media plain encryption. The last phase is to add authentication of sip registration.
 
 ## 3rd party libraries:
     
@@ -33,22 +34,25 @@ Our project consists three phase. First phase is to add TLS to the SIP messages.
 
 
 ### Import to your Eclipse IDE
-
-
-
-
-
+* download the Softphone-master.zip
+* import this archive into your Eclipse
+* check the audio device by launching the JMFregistery under JMF-2.1.1e/bin/jmfreigistry
+* import jmf configure file in to library by copying the JMF-2.1.1e/lib/jmf.properties into /lib
+* make sure external libraries work fine
+* check the /keyfile folder 's key files
 
 #### How to use it
 
-Change the path for the nginx conf mounting path to your full path, not mine!
+* launch the sipserver, select transport method. SipServer could coexit with either phoneA or phoneB.
+* launch the softphoneA in one host, select transport method
+* launch the softphoneB in another host
+* register A and B to SipServer
+* After status of A and B becomes idle, click call to make call.
 
 ### Todos
 
- - Write Tests
- - Rethink Github Save
- - Add Code Comments
- - Add Night Mode
+ - modify to Object-Oriented design
+ - add media/rtp proxy for nat tranversal
 
 License
 ----
