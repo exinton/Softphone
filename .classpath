@@ -6,9 +6,9 @@
 	<classpathentry kind="lib" path="lib/bcprov-jdk15on-148.jar"/>
 	<classpathentry kind="lib" path="lib/concurrent.jar"/>
 	<classpathentry kind="lib" path="lib/customizer.jar"/>
-	<classpathentry kind="lib" path="lib/jain-sip-sdp-1.2.2389.jar"/>
+	<classpathentry kind="lib" path="lib/jain-sip-sdp-1.2.2389.jar" sourcepath="/home/exinton/Downloads/trunk/trunk/src"/>
 	<classpathentry kind="lib" path="lib/jain-sip-src-1.2.2389.jar"/>
-	<classpathentry kind="lib" path="lib/jmf-2.1.1e.jar"/>
+	<classpathentry kind="lib" path="lib/jmf-2.1.1e.jar" sourcepath="/home/exinton/git/ZRTP4J/src"/>
 	<classpathentry kind="lib" path="lib/junit.jar"/>
 	<classpathentry kind="lib" path="lib/log4j.jar"/>
 	<classpathentry kind="lib" path="lib/mediaplayer.jar"/>

@@ -21,6 +21,8 @@ public class SipServerSecureGUI extends JFrame {
   JTextArea jTextArea3 = new JTextArea();
   JScrollPane jScrollPane4 = new JScrollPane();
   JTextArea jTextArea4 = new JTextArea();
+  JScrollPane jScrollPane5 = new JScrollPane();
+  
   JTabbedPane jTabbedPane1 = new JTabbedPane();
   JPanel jPanel1 = new JPanel();
   JPanel jPanel2 = new JPanel();
@@ -31,6 +33,7 @@ public class SipServerSecureGUI extends JFrame {
   JTextField jTextField1 = new JTextField();
   JLabel jLabel6 = new JLabel();
   JLabel jLabel7 = new JLabel();
+  private final JLabel lblTransport = new JLabel("transport");
 
   public SipServerSecureGUI() {
     enableEvents(AWTEvent.WINDOW_EVENT_MASK);
@@ -112,7 +115,7 @@ public void appendOngoingTransactionsDisplay(String text) {
     jLabel5.setForeground(Color.red);
     jLabel5.setHorizontalAlignment(SwingConstants.LEADING);
     jLabel5.setText("");
-    jLabel5.setBounds(new Rectangle(272, 49, 300, 25));
+    jLabel5.setBounds(new Rectangle(272, 49, 208, 25));
     jTabbedPane1.setFont(new java.awt.Font("MS Sans Serif", 0, 11));
     jTabbedPane1.setBounds(new Rectangle(12, 75, 750, 262));
     jLabel1.setText("Copyright 2007 Rogelio Martinez Perea");
@@ -159,7 +162,16 @@ public void appendOngoingTransactionsDisplay(String text) {
     label.setVerticalAlignment(SwingConstants.TOP);
     label.setBounds(22, 353, 700, 23);
     getContentPane().add(label);
-
+    
+    JComboBox comboBox = new JComboBox();
+    comboBox.setBounds(515, 52, 88, 25);
+    getContentPane().add(comboBox);
+    lblTransport.setBounds(440, 52, 70, 15);
+    getContentPane().add(lblTransport);
+    comboBox.addItem("UDP");
+    comboBox.addItem("TCP");
+    comboBox.addItem("TLS");
+    
 
   }
 

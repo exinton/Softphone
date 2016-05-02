@@ -2,9 +2,6 @@ package SIPSERVER;
 
 import javax.sip.*;
 import javax.sip.message.*;
-
-import Configuration.SipServerConfiguration;
-
 import javax.sip.header.*;
 import javax.sip.address.*;
 import java.net.*;

@@ -2,8 +2,6 @@ package SIPSERVER;
 
 import javax.swing.UIManager;
 
-import Configuration.SipServerConfiguration;
-
 import java.awt.*;
 
 /**

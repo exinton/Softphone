@@ -17,7 +17,7 @@ import gnu.java.zrtp.ZrtpUserCallback;
 import gnu.java.zrtp.jmf.transform.TransformManager;
 import gnu.java.zrtp.jmf.transform.zrtp.ZRTPTransformEngine;
 import gnu.java.zrtp.jmf.transform.zrtp.ZrtpTransformConnector;
-import Configuration.SoftPhoneConfiguration;
+
 import java.util.*;
 
 
@@ -34,7 +34,6 @@ public class VoiceTool_secure implements ReceiveStreamListener{
   private AudioFormat af=null;
   private ZrtpTransformConnector transConnector = null;
   private ZRTPTransformEngine zrtpEngine = null;
-  private SoftPhoneConfiguration myconfig=SoftPhoneConfiguration.getInstance();
   protected class MyCallback extends ZrtpUserCallback {
       MyCallback() {
       }
@@ -79,7 +78,7 @@ public class VoiceTool_secure implements ReceiveStreamListener{
   }
   
 
-public void startMedia(String peerIP,int peerPort,int recvPort, String fmt) {
+public void startMedia(String peerIP,int peerPort,int recvPort, String fmt,String zridPath) {
 
   try{
     //We obtain the DataSource correponding to the microphone capture
@@ -159,7 +158,7 @@ public void startMedia(String peerIP,int peerPort,int recvPort, String fmt) {
     
     
     String currentDir=System.getProperty("user.dir");
-    String zidPath=currentDir+myconfig.zrtpPath;
+    String zidPath=currentDir+zridPath;
     if (!zrtpEngine.initialize(zidPath, config))
         System.err.println("Initialize failed");
 
@@ -179,7 +178,7 @@ public void startMedia(String peerIP,int peerPort,int recvPort, String fmt) {
 
     ss = rtpManager.createSendStream(ds, 0);
     boolean result=zrtpEngine.isEnableZrtp();
-    System.out.println("zrtp engine"+result);
+    System.out.println("zrtp engine "+result);
    //We start capture and transmission
  
     

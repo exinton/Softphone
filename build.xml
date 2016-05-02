@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Softphone">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse/java-mars/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Softphone.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/bccontrib-1.0-SNAPSHOT.jar"/>
+        <pathelement location="lib/bcprov-jdk15on-148.jar"/>
+        <pathelement location="lib/concurrent.jar"/>
+        <pathelement location="lib/customizer.jar"/>
+        <pathelement location="lib/jain-sip-sdp-1.2.2389.jar"/>
+        <pathelement location="lib/jain-sip-src-1.2.2389.jar"/>
+        <pathelement location="lib/jmf-2.1.1e.jar"/>
+        <pathelement location="lib/junit.jar"/>
+        <pathelement location="lib/log4j.jar"/>
+        <pathelement location="lib/mediaplayer.jar"/>
+        <pathelement location="lib/multiplayer.jar"/>
+        <pathelement location="lib/zrtp4j-full-4.1.0.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.ucls"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="Softphone.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Softphone2App (1)">
+        <java classname="softphone2.Softphone2App" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Softphone3App (1)">
+        <java classname="softphone3.Softphone3App" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Softphone5App">
+        <java classname="softphone5.Softphone5App" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="SipproxyApp (1)">
+        <java classname="sipproxy.SipproxyApp" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="ShowInterfaces">
+        <java classname="rtp.ShowInterfaces" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Shootist (1)">
+        <java classname="tls.Shootist" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="rtp_client_secure">
+        <java classname="rtp.rtp_client_secure" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Example_4App (1)">
+        <java classname="example4.Example_4App" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="ShootmeAuth">
+        <java classname="authorization.ShootmeAuth" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="ShootistAuth">
+        <java classname="authorization.ShootistAuth" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="getkey">
+        <java classname="tls.getkey" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Sipproxy2App">
+        <java classname="SIPSERVER.Sipproxy2App" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Shootme2">
+        <java classname="tls.Shootme2" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Shootme (1)">
+        <java classname="tls.Shootme" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="rtp_client">
+        <java classname="rtp.rtp_client" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="SipproxySecureApp">
+        <java classname="sipproxy_secure.SipproxySecureApp" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Shootist2">
+        <java classname="tls.Shootist2" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Softphone4App">
+        <java classname="softphone4.Softphone4App" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Example_5App (2)">
+        <java classname="example5.Example_5App" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Softphone1App (3)">
+        <java classname="softphone1.Softphone1App" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="Example3App (1)">
+        <java classname="example3.Example3App" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="getIP">
+        <java classname="rtp.getIP" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+    <target name="SSSAPP">
+        <java classname="SIPSERVER.SipServerSecureApp" failonerror="true" fork="yes">
+            <classpath refid="Softphone.classpath"/>
+        </java>
+    </target>
+</project>
